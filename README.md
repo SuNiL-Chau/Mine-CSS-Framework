@@ -10,4 +10,4 @@ The naming convention are also kept as mine-*.
 
 Feel free to check out bit by downloading it.
 
-<h2><b>Note: I'm Still working on it it might be unstable in one or the another way.</b></h2>
+<h2 style="color: red;"><b>Note: I'm Still working on it it might be unstable in one or the another way.</b></h2>
