@@ -1,0 +1,50 @@
+$alert-pad: 0.75rem 1.25rem;
+
+.alert{
+    position: relative;
+    padding: $alert-pad;
+    margin-bottom: 1rem;
+    border: $border-1 transparent;
+    border-radius: $border-radius;
+}
+
+.alert-link{
+    font-weight: weight(bold);
+}
+
+.alert-head{
+    color: inherit;
+}
+
+.alert-closeable{
+    padding-right: 4rem;
+    & .close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        color: inherit;
+        background-color: transparent;
+        border: 0;
+        font-size: 1rem;
+        cursor: pointer;
+        &:focus{
+            outline: 0;
+        }
+    }
+}
+
+@each $name, $color in $colors {
+    .alert-#{$name} {
+        color: darken($color, 20%);
+        background-color: lighten($color, 20%);
+        border-color: darken($color, 20%);
+        & hr{
+            border-top-color: darken($color, 30%);
+        }
+        & .alert-link{
+            border-top-color: darken($color, 20%);
+            color: darken($color, 40%);
+        }
+    }
+}

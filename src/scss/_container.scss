@@ -1,0 +1,80 @@
+// Container code used from:
+// https://vinceumo.github.io/devNotes/Sass/responsive-container-classes-with-scss
+
+@mixin min($bp, $max: "null", $device: "screen") {
+    @if $max=="null" {
+        @media only #{$device} and (min-width: #{$bp}) {
+            @content;
+        }
+    }
+
+    @else {
+        @media only #{$device} and (min-width: #{$bp}) and (max-width: #{$max}) {
+            @content;
+        }
+    }
+}
+
+@function bp($bp) {
+    @return map-get($breakpoints, $bp);
+}
+
+$breakpoints: (
+    na: 0px,
+    // smart phone
+    xs: 640px,
+    // tab
+    sm: 1024px,
+    // desk
+    md: 1440px,
+    // large desk
+    lg: 1920px,
+);
+
+@function container($container-size, $true-val: false) {
+    @return map-get($container-sizes, $container-size);
+}
+
+$container-sizes: (
+    sm: map-get($breakpoints, sm) - 40px,
+    md: map-get($breakpoints, md) - 50px,
+    lg: map-get($breakpoints, lg) - 100px
+    );
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    &:not(.is-fluid) {
+        margin: 0 auto;
+
+        @each $bp,
+        $container-size in $container-sizes {
+            @include min(#{bp(#{$bp})
+        }
+
+        ) {
+            width: 100%;
+            max-width: container(#{$bp});
+        }
+    }
+}
+}
+
+@each $bp,
+$container-size in $container-sizes {
+    .container-#{$bp} {
+        margin: 0 auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        width: 100%;
+
+        $i: index($container-sizes, $bp $container-size);
+
+        @for $j from $i through length($container-sizes) {
+            @include min(#{bp(nth(nth($container-sizes, $j), 1))}) {
+                max-width: container(#{nth(nth($container-sizes, $j), 1)});
+            }
+        }
+    }
+}

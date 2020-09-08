@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine CSS - component section</title>
+    <link rel="stylesheet" href="/dist/css/mine.min.css">
+</head>
+
+<body>
+
+    <div class="container is-fluid py-5">
+        <div class="row center middle">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                <!-- Heading -->
+                <h1 class="massive-3">Mine CSS Framework</h1>
+                <p class="prime">A text which stands out in its own way ;)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-sm py-2">
+        <h2 class="text-center">Components</h2>
+    </div>
+
+    <!-- alerts -->
+
+    <div class="container-sm py-2">
+        <h2 class="text-center">Alert</h2>
+        <div class="container py-1">
+            <h3>Alert using <code>.alert</code> & bg colors using <code>.alert-bg-color</code></h3>
+            <div role="alert" class="alert alert-bg-primary">
+                Normal alert <a href="#" class="alert-link">primary</a>.
+            </div>
+            <div role="alert" class="alert alert-bg-secondary">
+                Normal alert <a href="#" class="alert-link">secondary</a>.
+            </div>
+            <div role="alert" class="alert alert-bg-success">
+                Normal alert <a href="#" class="alert-link">success</a>.
+            </div>
+            <div role="alert" class="alert alert-bg-info">
+                Normal alert <a href="#" class="alert-link">info</a>.
+            </div>
+            <div role="alert" class="alert alert-bg-warn">
+                Normal alert <a href="#" class="alert-link">warn</a>.
+            </div>
+            <div role="alert" class="alert alert-bg-danger">
+                Normal alert <a href="#" class="alert-link">danger</a>.
+            </div>
+            <div role="alert" class="alert alert-bg-dark">
+                Normal alert <a href="#" class="alert-link">dark</a>.
+            </div>
+            <div role="alert" class="alert alert-bg-light">
+                Normal alert <a href="#" class="alert-link">light</a>.
+            </div>
+        </div>
+
+        <div class="container-sm py-1">
+            <h4>content-full alert with alerts own <code>.alert-head</code> and <code>hr</code></h4>
+            <div class="alert alert-bg-info" role="alert">
+                <h4 class="alert-head">Wassup! @user</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ipsum? Quae nobis consectetur assumenda, veniam unde eum mollitia doloremque vel, adipisci non nesciunt? Et facere accusamus eos ipsam corrupti fugiat.</p>
+                <hr>
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis voluptatem illo asperiores ratione est ullam soluta fugit nulla, cupiditate eos deserunt vitae magnam eius eveniet? Dolore exercitationem consequatur blanditiis.</p>
+            </div>
+        </div>
+
+        <div class="container-sm py-1">
+            <div role="alert" class="alert alert-bg-warn alert-closeable show">
+                Normal alert 
+                <a href="#" class="alert-link">warn</a>.
+                <button type="button" class="close" aria-label="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div role="alert" class="alert alert-bg-success alert-closeable show">
+                Normal alert 
+                <a href="#" class="alert-link">success</a>.
+                <button type="button" class="close" aria-label="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-sm py-2">
+        <h2 class="text-center">Button</h2>
+        <!-- normal btn -->
+        <div class="container-sm py-1">
+            <h3>To use the button add class <code>.btn</code> & other class like code <code>.btn-*</code> here star is the colors primary & etc.</h3>
+            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">Primary</button>
+
+            <button type="button" class="btn btn-secondary">Secondary</button>
+
+            <button type="button" class="btn btn-success">Success</button>
+
+            <button type="button" class="btn btn-danger">Danger</button>
+
+            <button type="button" class="btn btn-warn">Warning</button>
+
+            <button type="button" class="btn btn-info">Info</button>
+
+            <button type="button" class="btn btn-light">Light</button>
+
+            <button type="button" class="btn btn-dark">Dark</button>
+        </div>
+        <!-- outlined btn -->
+        <div class="container-sm py-1">
+            <h3>To use the outline button add class <code>.btn</code> & other class like code <code>.btn-*-outline</code> here star is the colors primary & etc.</h3>
+            <button type="button" class="btn btn-primary-outline">Primary</button>
+
+            <button type="button" class="btn btn-secondary-outline">Secondary</button>
+
+            <button type="button" class="btn btn-success-outline">Success</button>
+
+            <button type="button" class="btn btn-danger-outline">Danger</button>
+
+            <button type="button" class="btn btn-warn-outline">Warning</button>
+
+            <button type="button" class="btn btn-info-outline">Info</button>
+
+            <button type="button" class="btn btn-light-outline">Light</button>
+
+            <button type="button" class="btn btn-dark-outline">Dark</button>
+        </div>
+        <!-- disabled btn -->
+        <div class="container-sm py-1">
+            <h3>To disable the button add class <code>.disabled</code> or use the <code>disabled</code> attribute to the element.</h3>
+            <button type="button" class="btn btn-primary" disabled>Primary</button>
+
+            <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+
+            <button type="button" class="btn btn-success" disabled>Success</button>
+
+            <button type="button" class="btn btn-danger" disabled>Danger</button>
+
+            <button type="button" class="btn btn-warn" disabled>Warning</button>
+
+            <button type="button" class="btn btn-info" disabled>Info</button>
+
+            <button type="button" class="btn btn-light" disabled>Light</button>
+
+            <button type="button" class="btn btn-dark" disabled>Dark</button>
+        </div>
+        <!-- focus btn -->
+        <div class="container-sm py-1">
+            <h3>To focus the button add class <code>.focus</code> or use the <code>focus</code> attribute to the element.</h3>
+            <button type="button" class="btn btn-primary" focus>Primary</button>
+
+            <button type="button" class="btn btn-secondary" focus>Secondary</button>
+
+            <button type="button" class="btn btn-success" focus>Success</button>
+
+            <button type="button" class="btn btn-danger" focus>Danger</button>
+
+            <button type="button" class="btn btn-warn" focus>Warning</button>
+
+            <button type="button" class="btn btn-info" focus>Info</button>
+
+            <button type="button" class="btn btn-light" focus>Light</button>
+
+            <button type="button" class="btn btn-dark" focus>Dark</button>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/mine.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+// Colors
+$white: #fff;
+$black: #000;
+$bg-primary: #006Dff;
+$bg-primary-dark: darken($bg-primary, 10%);
+$bg-secondary: #6c757d;
+$bg-secondary-dark: #343a40;
+$bg-success: #25b847;
+$bg-success-dark: darken($bg-success, 10%);
+$bg-info: #20BFD9;
+$bg-info-dark: darken($bg-info, 10%);
+$bg-warn: #ffc107;
+$bg-warn-dark: darken($bg-warn, 10%);
+$bg-danger: #dc3545;
+$bg-danger-dark: darken($bg-danger, 10%);
+$bg-dark: #343a40;
+$bg-darker: darken($bg-dark, 10%);
+$bg-light: #f8f9fa;
+$bg-light-less: darken($bg-light, 10%);
+$border-radius: 0.3rem;
+
+
+// font-weght
+$font-weights: (
+    "thin": 100,
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+    "black": 800,
+    "black-heavey": 900
+);
+
+$colors: (
+    "bg-primary": #006Dff,
+    "bg-secondary": #6c757d,
+    "bg-success": #25b847,
+    "bg-info": #20BFD9,
+    "bg-warn": #ffc107,
+    "bg-danger": #dc3545,
+    "bg-dark": #343a40,
+    "bg-light": #f8f9fa
+);
+
+// Dynamic text-color
+@function text-dynamic($font-color){
+    @if (lightness($font-color) > 50) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+// colors
+@each $name, $color in $colors {
+    .#{$name} {
+        background-color: $color;
+        color: text-dynamic($color);
+    }
+}
+
+
+// font-function
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+// Primary fill & outline
+@mixin primary-fill {
+    background-color: $bg-primary;
+    border: 1px solid $bg-primary;
+    color: text-dynamic($bg-primary);
+
+    &:hover {
+        background-color: $bg-primary-dark;
+        border: 1px solid $bg-primary-dark;
+        color: text-dynamic($bg-primary-dark);
+    }
+}
+
+@mixin primary-outline {
+    background-color: transparent;
+    border: 1px solid $bg-primary;
+    color: $bg-primary;
+    &:hover{
+        background-color: $bg-primary;
+        color: text-dynamic($bg-primary);
+    }
+}
+
+// Secondary fill & outline
+@mixin secondary-fill {
+    background-color: $bg-secondary;
+    border: 1px solid $bg-secondary;
+    color: text-dynamic($bg-secondary);
+
+    &:hover {
+        background-color: $bg-secondary-dark;
+        border: 1px solid $bg-secondary-dark;
+        color: text-dynamic($bg-secondary-dark);
+    }
+}
+
+@mixin secondary-outline {
+    background-color: transparent;
+    border: 1px solid $bg-secondary;
+    color: $bg-secondary;
+    &:hover{
+        background-color: $bg-secondary;
+        color: text-dynamic($bg-secondary);
+    }
+}
+
+// success fill & outline
+@mixin success-fill {
+    background-color: $bg-success;
+    border: 1px solid $bg-success;
+    color: text-dynamic($bg-success);
+
+    &:hover {
+        background-color: $bg-success-dark;
+        border: 1px solid $bg-success-dark;
+        color: text-dynamic($bg-success-dark);
+    }
+}
+
+@mixin success-outline {
+    background-color: transparent;
+    border: 1px solid $bg-success;
+    color: $bg-success;
+    &:hover{
+        background-color: $bg-success;
+        color: text-dynamic($bg-success);
+    }
+}
+
+// info fill & outline
+@mixin info-fill {
+    background-color: $bg-info;
+    border: 1px solid $bg-info;
+    color: text-dynamic($bg-info);
+
+    &:hover {
+        background-color: $bg-info-dark;
+        border: 1px solid $bg-info-dark;
+        color: text-dynamic($bg-info-dark);
+    }
+}
+
+@mixin info-outline {
+    background-color: transparent;
+    border: 1px solid $bg-info;
+    color: $bg-info;
+    &:hover{
+        background-color: $bg-info;
+        color: text-dynamic($bg-info);
+    }
+}
+
+// warning fill & outline
+@mixin warn-fill {
+    background-color: $bg-warn;
+    border: 1px solid $bg-warn;
+    color: text-dynamic($bg-warn);
+
+    &:hover {
+        background-color: $bg-warn-dark;
+        border: 1px solid $bg-warn-dark;
+        color: text-dynamic($bg-warn-dark);
+    }
+}
+
+@mixin warn-outline {
+    background-color: transparent;
+    border: 1px solid $bg-warn;
+    color: $bg-warn;
+    &:hover{
+        background-color: $bg-warn;
+        color: text-dynamic($bg-warn);
+    }
+}
+
+// Danger fill & outline
+@mixin danger-fill {
+    background-color: $bg-danger;
+    border: 1px solid $bg-danger;
+    color: text-dynamic($bg-danger);
+
+    &:hover {
+        background-color: $bg-danger-dark;
+        border: 1px solid $bg-danger-dark;
+        color: text-dynamic($bg-danger-dark);
+    }
+}
+
+@mixin danger-outline {
+    background-color: transparent;
+    border: 1px solid $bg-danger;
+    color: $bg-danger;
+    &:hover{
+        background-color: $bg-danger;
+        color: text-dynamic($bg-danger);
+    }
+}
+
+// Dark fill & outline
+@mixin dark-fill {
+    background-color: $bg-dark;
+    border: 1px solid $bg-dark;
+    color: text-dynamic($bg-dark);
+
+    &:hover {
+        background-color: $bg-darker;
+        border: 1px solid $bg-darker;
+        color: text-dynamic($bg-darker);
+    }
+}
+
+@mixin dark-outline {
+    background-color: transparent;
+    border: 1px solid $bg-dark;
+    color: $bg-dark;
+    &:hover{
+        background-color: $bg-dark;
+        color: text-dynamic($bg-dark);
+    }
+}
+// light fill & outline
+@mixin light-fill {
+    background-color: $bg-light;
+    border: 1px solid $bg-light;
+    color: text-dynamic($bg-light);
+
+    &:hover {
+        background-color: $bg-light-less;
+        border: 1px solid $bg-light-less;
+        color: text-dynamic($bg-light-less);
+    }
+}
+
+@mixin light-outline {
+    background-color: transparent;
+    border: 1px solid $bg-light-less;
+    color: $bg-light-less;
+    &:hover{
+        background-color: $bg-light;
+        color: text-dynamic($bg-light);
+    }
+}

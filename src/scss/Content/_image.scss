@@ -1,0 +1,48 @@
+// svg
+
+svg{
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+// img
+
+$border-1: 1px solid;
+
+img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-thumbnail{
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    padding: 0.25rem;
+    background-color: $white;
+    border: $border-1 $bg-light-less;
+}
+
+// figure
+
+figure{
+    margin-bottom: 1rem;
+}
+
+.fig{
+    display: inline-block;
+}
+
+.fig-img{
+    margin-bottom: 0.5rem;
+}
+
+.fig-caption{
+    font-size: 90%;
+    color: $bg-secondary;
+}

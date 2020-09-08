@@ -1,0 +1,135 @@
+$btn-shadow: 0 0 0 0 0.25rem;
+
+.btn {
+    display: inline-block;
+    font-weight: weight(regular);
+    color: $bg-darker;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: $border-1 transparent;
+    padding: 0.35rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: $border-radius;
+    transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.btn:focus, .btn.focus{
+    outline: 1px;
+    box-shadow: $btn-shadow $bg-primary;
+}
+
+.btn:disabled, .btn.disabled{
+    opacity: 0.5;
+}
+
+a.btn.disabled, fieldset:disabled, .btn:disabled{
+    pointer-events: none;
+}
+
+.btn-primary{
+    @include primary-fill;
+}
+.btn-primary:focus, .btn-primary.focus{
+    background-color: $bg-primary-dark;
+    color: text-dynamic($bg-primary-dark);
+    border: $border-1 $bg-primary-dark;
+}
+
+.btn-secondary{
+    @include secondary-fill;
+}
+.btn-secondary:focus, .btn-secondary.focus{
+    background-color: $bg-secondary-dark;
+    color: text-dynamic($bg-secondary-dark);
+    border: $border-1 $bg-secondary-dark;
+}
+
+.btn-success{
+    @include success-fill;
+}
+.btn-success:focus, .btn-success.focus{
+    background-color: $bg-success-dark;
+    color: text-dynamic($bg-success-dark);
+    border: $border-1 $bg-success-dark;
+}
+
+.btn-info{
+    @include info-fill;
+}
+.btn-info:focus, .btn-info.focus{
+    background-color: $bg-info-dark;
+    color: text-dynamic($bg-info-dark);
+    border: $border-1 $bg-info-dark;
+}
+
+.btn-warn{
+    @include warn-fill;
+}
+.btn-warn:focus, .btn-warn.focus{
+    background-color: $bg-warn-dark;
+    color: text-dynamic($bg-warn-dark);
+    border: $border-1 $bg-warn-dark;
+}
+
+.btn-danger{
+    @include danger-fill;
+}
+.btn-danger:focus, .btn-danger.focus{
+    background-color: $bg-danger-dark;
+    color: text-dynamic($bg-danger-dark);
+    border: $border-1 $bg-danger-dark;
+}
+
+.btn-dark{
+    @include dark-fill;
+}
+.btn-dark:focus, .btn-dark.focus{
+    background-color: $bg-darker;
+    color: text-dynamic($bg-darker);
+    border: $border-1 $bg-darker;
+}
+
+.btn-light{
+    @include light-fill;
+}
+.btn-light:focus, .btn-light.focus{
+    background-color: $bg-light-less;
+    color: text-dynamic($bg-light-less);
+    border: $border-1 $bg-light-less;
+}
+
+.btn-primary-outline{
+    @include primary-outline;
+}
+
+.btn-secondary-outline{
+    @include secondary-outline;
+}
+
+.btn-success-outline{
+    @include success-outline;
+}
+
+.btn-info-outline{
+    @include info-outline;
+}
+
+.btn-warn-outline{
+    @include warn-outline;
+}
+
+.btn-danger-outline{
+    @include danger-outline;
+}
+
+.btn-dark-outline{
+    @include dark-outline;
+}
+
+.btn-light-outline{
+    @include light-outline;
+}

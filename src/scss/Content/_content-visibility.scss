@@ -1,0 +1,14 @@
+/* This was launched in 2020 mid & skip rendering work for faster performance
+kindly use at risk check the w3c documentation on css containment when this was added in this framework it was working on latest chrome 85 */
+.content-visible-auto{
+    content-visibility: auto;
+}
+.content-visible{
+    content-visbility: visible;
+}
+.content-hidden{
+    content-visbility: hidden;
+}
+.content-hidden-match{
+    content-visbility: hidden-matchable;
+}

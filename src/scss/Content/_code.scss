@@ -1,0 +1,44 @@
+
+pre,
+code,
+kbd,
+samp{
+    font-size: 1rem;
+}
+
+code {
+    font-size: 85%;
+    color: rgb(250, 75, 75);
+    word-wrap: break-word;
+}
+
+kbd {
+    padding: 0.2rem 0.4rem;
+    font-size: 85%;
+    color: $white;
+    background-color: #1c2024;
+    border-radius: $border-radius;
+
+    & kbd {
+        padding: 0;
+        font-size: 100%;
+        font-weight: weight(bold);
+    }
+}
+
+pre {
+    display: block;
+    font-size: 85%;
+    color: #1c2024;
+
+    code {
+        font-size: inherit;
+        color: inherit;
+        word-break: normal;
+    }
+}
+
+.pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll;
+}

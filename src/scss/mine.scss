@@ -1,0 +1,96 @@
+// Body Base
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+// Imports
+// typo
+@import './root';
+@import './content/font';
+@import './reset';
+@import './mixin_variables';
+@import './grid';
+@import './container';
+@import './Content/typography';
+@import './Content/content-visibility';
+@import './Content/image';
+@import './Content/table';
+
+// component
+@import './components/alert';
+@import './components/btn';
+
+
+// Padding 
+// Padding, pt, pb, pr, pl, py, px
+@for $i from 0 through 5 {
+    $x: 0rem;
+    // padding around
+    .p-#{$i}{
+        padding: $x + ($i * 1rem);
+    }
+    // padding top
+    .pt-#{$i}{
+        padding-top: $x + ($i * 1rem);
+    }
+    // padding-bottom
+    .pb-#{$i}{
+        padding-bottom: $x + ($i * 1rem);
+    }
+    // padding-left
+    .pl-#{$i}{
+        padding-left: $x + ($i * 1rem);
+    }
+    // padding-right
+    .pr-#{$i}{
+        padding-right: $x + ($i * 1rem);
+    }
+    // padding top bottom
+    .py-#{$i}{
+        padding-top: $x + ($i * 1rem);
+        padding-bottom: $x + ($i * 1rem);
+    }
+    // padding right left
+    .px-#{$i}{
+        padding-right: $x + ($i * 1rem);
+        padding-left: $x + ($i * 1rem);
+    }
+}
+
+// Margins 
+@for $i from 0 through 5 {
+    $x: 0rem;
+    // margin around
+    .m-#{$i}{
+        margin: $x + ($i * 1rem);
+    }
+    // margin top
+    .mt-#{$i}{
+        margin-top: $x + ($i * 1rem);
+    }
+    // margin bottom
+    .mb-#{$i}{
+        margin-bottom: $x + ($i * 1rem);
+    }
+    // margin left
+    .ml-#{$i}{
+        margin-left: $x + ($i * 1rem);
+    }
+    // margin-right
+    .mr-#{$i}{
+        margin-right: $x + ($i * 1rem);
+    }
+    // margin top bottom
+    .my-#{$i}{
+        margin-top: $x + ($i * 1rem);
+        margin-bottom: $x + ($i * 1rem);
+    }
+    // margin right left
+    .mx-#{$i}{
+        margin-right: $x + ($i * 1rem);
+        margin-left: $x + ($i * 1rem);
+    }
+}
