@@ -2093,8 +2093,8 @@ caption {
 
 .btn:focus, .btn.focus {
   outline: 1px;
-  -webkit-box-shadow: 0 0 0 0 0.25rem #006Dff;
-          box-shadow: 0 0 0 0 0.25rem #006Dff;
+  -webkit-box-shadow: 0 0 0 4px #006Dff;
+          box-shadow: 0 0 0 4px #006Dff;
 }
 
 .btn:disabled, .btn.disabled {
@@ -2121,6 +2121,8 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   background-color: #0057cc;
   color: #fff;
   border: 1px solid #0057cc;
+  -webkit-box-shadow: 0 0 0 4px #99c5ff;
+          box-shadow: 0 0 0 4px #99c5ff;
 }
 
 .btn-secondary {
@@ -2139,6 +2141,8 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   background-color: #343a40;
   color: #fff;
   border: 1px solid #343a40;
+  -webkit-box-shadow: 0 0 0 4px #bcc1c6;
+          box-shadow: 0 0 0 4px #bcc1c6;
 }
 
 .btn-success {
@@ -2157,6 +2161,8 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   background-color: #1c8e37;
   color: #fff;
   border: 1px solid #1c8e37;
+  -webkit-box-shadow: 0 0 0 4px #8ee8a3;
+          box-shadow: 0 0 0 4px #8ee8a3;
 }
 
 .btn-info {
@@ -2175,6 +2181,8 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   background-color: #1998ad;
   color: #fff;
   border: 1px solid #1998ad;
+  -webkit-box-shadow: 0 0 0 4px #a1e6f1;
+          box-shadow: 0 0 0 4px #a1e6f1;
 }
 
 .btn-warn {
@@ -2193,6 +2201,8 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   background-color: #d39e00;
   color: #fff;
   border: 1px solid #d39e00;
+  -webkit-box-shadow: 0 0 0 4px #ffe7a0;
+          box-shadow: 0 0 0 4px #ffe7a0;
 }
 
 .btn-danger {
@@ -2211,6 +2221,8 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   background-color: #bd2130;
   color: #fff;
   border: 1px solid #bd2130;
+  -webkit-box-shadow: 0 0 0 4px #f3b7bd;
+          box-shadow: 0 0 0 4px #f3b7bd;
 }
 
 .btn-dark {
@@ -2229,6 +2241,8 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   background-color: #1d2124;
   color: #fff;
   border: 1px solid #1d2124;
+  -webkit-box-shadow: 0 0 0 4px #7a8793;
+          box-shadow: 0 0 0 4px #7a8793;
 }
 
 .btn-light {
@@ -2247,6 +2261,8 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   background-color: #dae0e5;
   color: #000;
   border: 1px solid #dae0e5;
+  -webkit-box-shadow: 0 0 0 4px white;
+          box-shadow: 0 0 0 4px white;
 }
 
 .btn-primary-outline {
@@ -2335,6 +2351,518 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 .btn-light-outline:hover {
   background-color: #f8f9fa;
   color: #000;
+}
+
+.bg-primary-sliced-top-left {
+  background-image: linear-gradient(-45deg, #006Dff 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-primary-sliced-top-left:hover {
+  background-image: linear-gradient(-45deg, #0057cc 92%, transparent 10%);
+}
+
+.bg-primary-sliced-top-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-primary-sliced-top-right {
+  background-image: linear-gradient(45deg, #006Dff 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-primary-sliced-top-right:hover {
+  background-image: linear-gradient(45deg, #0057cc 92%, transparent 10%);
+}
+
+.bg-primary-sliced-top-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-primary-sliced-bottom-left {
+  background-image: linear-gradient(-135deg, #006Dff 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-primary-sliced-bottom-left:hover {
+  background-image: linear-gradient(-135deg, #0057cc 92%, transparent 10%);
+}
+
+.bg-primary-sliced-bottom-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-primary-sliced-bottom-right {
+  background-image: linear-gradient(135deg, #006Dff 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-primary-sliced-bottom-right:hover {
+  background-image: linear-gradient(135deg, #0057cc 92%, transparent 10%);
+}
+
+.bg-primary-sliced-bottom-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-secondary-sliced-top-left {
+  background-image: linear-gradient(-45deg, #6c757d 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-secondary-sliced-top-left:hover {
+  background-image: linear-gradient(-45deg, #545b62 92%, transparent 10%);
+}
+
+.bg-secondary-sliced-top-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-secondary-sliced-top-right {
+  background-image: linear-gradient(45deg, #6c757d 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-secondary-sliced-top-right:hover {
+  background-image: linear-gradient(45deg, #545b62 92%, transparent 10%);
+}
+
+.bg-secondary-sliced-top-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-secondary-sliced-bottom-left {
+  background-image: linear-gradient(-135deg, #6c757d 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-secondary-sliced-bottom-left:hover {
+  background-image: linear-gradient(-135deg, #545b62 92%, transparent 10%);
+}
+
+.bg-secondary-sliced-bottom-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-secondary-sliced-bottom-right {
+  background-image: linear-gradient(135deg, #6c757d 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-secondary-sliced-bottom-right:hover {
+  background-image: linear-gradient(135deg, #545b62 92%, transparent 10%);
+}
+
+.bg-secondary-sliced-bottom-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-success-sliced-top-left {
+  background-image: linear-gradient(-45deg, #25b847 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-success-sliced-top-left:hover {
+  background-image: linear-gradient(-45deg, #1c8e37 92%, transparent 10%);
+}
+
+.bg-success-sliced-top-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-success-sliced-top-right {
+  background-image: linear-gradient(45deg, #25b847 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-success-sliced-top-right:hover {
+  background-image: linear-gradient(45deg, #1c8e37 92%, transparent 10%);
+}
+
+.bg-success-sliced-top-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-success-sliced-bottom-left {
+  background-image: linear-gradient(-135deg, #25b847 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-success-sliced-bottom-left:hover {
+  background-image: linear-gradient(-135deg, #1c8e37 92%, transparent 10%);
+}
+
+.bg-success-sliced-bottom-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-success-sliced-bottom-right {
+  background-image: linear-gradient(135deg, #25b847 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-success-sliced-bottom-right:hover {
+  background-image: linear-gradient(135deg, #1c8e37 92%, transparent 10%);
+}
+
+.bg-success-sliced-bottom-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-info-sliced-top-left {
+  background-image: linear-gradient(-45deg, #20BFD9 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-info-sliced-top-left:hover {
+  background-image: linear-gradient(-45deg, #1998ad 92%, transparent 10%);
+}
+
+.bg-info-sliced-top-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-info-sliced-top-right {
+  background-image: linear-gradient(45deg, #20BFD9 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-info-sliced-top-right:hover {
+  background-image: linear-gradient(45deg, #1998ad 92%, transparent 10%);
+}
+
+.bg-info-sliced-top-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-info-sliced-bottom-left {
+  background-image: linear-gradient(-135deg, #20BFD9 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-info-sliced-bottom-left:hover {
+  background-image: linear-gradient(-135deg, #1998ad 92%, transparent 10%);
+}
+
+.bg-info-sliced-bottom-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-info-sliced-bottom-right {
+  background-image: linear-gradient(135deg, #20BFD9 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-info-sliced-bottom-right:hover {
+  background-image: linear-gradient(135deg, #1998ad 92%, transparent 10%);
+}
+
+.bg-info-sliced-bottom-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-warn-sliced-top-left {
+  background-image: linear-gradient(-45deg, #ffc107 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-warn-sliced-top-left:hover {
+  background-image: linear-gradient(-45deg, #d39e00 92%, transparent 10%);
+}
+
+.bg-warn-sliced-top-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-warn-sliced-top-right {
+  background-image: linear-gradient(45deg, #ffc107 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-warn-sliced-top-right:hover {
+  background-image: linear-gradient(45deg, #d39e00 92%, transparent 10%);
+}
+
+.bg-warn-sliced-top-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-warn-sliced-bottom-left {
+  background-image: linear-gradient(-135deg, #ffc107 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-warn-sliced-bottom-left:hover {
+  background-image: linear-gradient(-135deg, #d39e00 92%, transparent 10%);
+}
+
+.bg-warn-sliced-bottom-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-warn-sliced-bottom-right {
+  background-image: linear-gradient(135deg, #ffc107 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-warn-sliced-bottom-right:hover {
+  background-image: linear-gradient(135deg, #d39e00 92%, transparent 10%);
+}
+
+.bg-warn-sliced-bottom-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-danger-sliced-top-left {
+  background-image: linear-gradient(-45deg, #dc3545 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-danger-sliced-top-left:hover {
+  background-image: linear-gradient(-45deg, #bd2130 92%, transparent 10%);
+}
+
+.bg-danger-sliced-top-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-danger-sliced-top-right {
+  background-image: linear-gradient(45deg, #dc3545 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-danger-sliced-top-right:hover {
+  background-image: linear-gradient(45deg, #bd2130 92%, transparent 10%);
+}
+
+.bg-danger-sliced-top-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-danger-sliced-bottom-left {
+  background-image: linear-gradient(-135deg, #dc3545 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-danger-sliced-bottom-left:hover {
+  background-image: linear-gradient(-135deg, #bd2130 92%, transparent 10%);
+}
+
+.bg-danger-sliced-bottom-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-danger-sliced-bottom-right {
+  background-image: linear-gradient(135deg, #dc3545 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-danger-sliced-bottom-right:hover {
+  background-image: linear-gradient(135deg, #bd2130 92%, transparent 10%);
+}
+
+.bg-danger-sliced-bottom-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-dark-sliced-top-left {
+  background-image: linear-gradient(-45deg, #343a40 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-dark-sliced-top-left:hover {
+  background-image: linear-gradient(-45deg, #1d2124 92%, transparent 10%);
+}
+
+.bg-dark-sliced-top-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-dark-sliced-top-right {
+  background-image: linear-gradient(45deg, #343a40 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-dark-sliced-top-right:hover {
+  background-image: linear-gradient(45deg, #1d2124 92%, transparent 10%);
+}
+
+.bg-dark-sliced-top-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-dark-sliced-bottom-left {
+  background-image: linear-gradient(-135deg, #343a40 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-dark-sliced-bottom-left:hover {
+  background-image: linear-gradient(-135deg, #1d2124 92%, transparent 10%);
+}
+
+.bg-dark-sliced-bottom-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-dark-sliced-bottom-right {
+  background-image: linear-gradient(135deg, #343a40 92%, transparent 10%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+}
+
+.bg-dark-sliced-bottom-right:hover {
+  background-image: linear-gradient(135deg, #1d2124 92%, transparent 10%);
+}
+
+.bg-dark-sliced-bottom-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-light-sliced-top-left {
+  background-image: linear-gradient(-45deg, #f8f9fa 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-light-sliced-top-left:hover {
+  background-image: linear-gradient(-45deg, #dae0e5 92%, transparent 10%);
+}
+
+.bg-light-sliced-top-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-light-sliced-top-right {
+  background-image: linear-gradient(45deg, #f8f9fa 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-light-sliced-top-right:hover {
+  background-image: linear-gradient(45deg, #dae0e5 92%, transparent 10%);
+}
+
+.bg-light-sliced-top-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-light-sliced-bottom-left {
+  background-image: linear-gradient(-135deg, #f8f9fa 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-light-sliced-bottom-left:hover {
+  background-image: linear-gradient(-135deg, #dae0e5 92%, transparent 10%);
+}
+
+.bg-light-sliced-bottom-left:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bg-light-sliced-bottom-right {
+  background-image: linear-gradient(135deg, #f8f9fa 92%, transparent 10%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+}
+
+.bg-light-sliced-bottom-right:hover {
+  background-image: linear-gradient(135deg, #dae0e5 92%, transparent 10%);
+}
+
+.bg-light-sliced-bottom-right:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .p-0 {

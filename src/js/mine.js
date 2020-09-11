@@ -9,17 +9,14 @@ $(document).ready(function() {
 });
 
 // btn
+var btnToggle = $("[data-toggle=button]");
 $(document).ready(function () {
-   function Button(element) {
-      this._element = element;
-   } // Getters
-   var _proto = Button.prototype;
-   function toggle() {
-      var ChangeEvent = true;
-      var AriaPressed = true;
-      var _rootElement = document.querySelector(`${this.button}`);
-      if (_rootElement) {
-         var input = $(this._element).querySelector('input:not([type="hidden"])');
+   btnToggle.click(function () {
+      if (!$(this).attr("aria-pressed","false")) {
+         $(this).attr("aria-pressed","false");
+      } else {
+         $(this).attr("aria-pressed","true");
       }
-   }
+      $(this).toggleClass("active").toggleClass("focus");
+   });
 });
