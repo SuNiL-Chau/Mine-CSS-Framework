@@ -25,18 +25,18 @@ caption {
     & th, & td{
         padding: $pad-1;
         vertical-align: top;
-        border-top: $border-1 $bg-secondary;
+        border-top: $border-1 $bg-gray;
     }
 
     & thead th{
         vertical-align: bottom;
-        border-bottom: $border-2 $bg-secondary;
+        border-bottom: $border-2 $bg-gray;
     }
 
     & tbody{
-        border-top: $border-2 $bg-secondary;
+        border-top: $border-2 $bg-gray;
         & + tbody {
-            border-top: $border-2 $bg-secondary;
+            border-top: $border-2 $bg-gray;
         }
     }
 
@@ -50,12 +50,12 @@ caption {
 .table-dark{
     background-color: $bg-dark;
     color: $bg-light;
-    border-color: $bg-secondary;
+    border-color: $bg-gray;
 }
 
 .table-bordered{
     th, td {
-        border: $border-1 $bg-secondary;
+        border: $border-1 $bg-gray;
     }
 }
 

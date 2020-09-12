@@ -1,10 +1,11 @@
 // Colors
 $white: #fff;
 $black: #000;
-$bg-primary: #006Dff;
+$bg-gray: rgb(151, 150, 150);
+$bg-primary: #c96480;
 $bg-primary-dark: darken($bg-primary, 10%);
-$bg-secondary: #6c757d;
-$bg-secondary-dark: #343a40;
+$bg-secondary: #606c38;
+$bg-secondary-dark: darken($bg-secondary, 10%);
 $bg-success: #25b847;
 $bg-success-dark: darken($bg-success, 10%);
 $bg-info: #20BFD9;
@@ -40,8 +41,8 @@ $font-weights: (
 );
 
 $colors: (
-    "bg-primary": #006Dff,
-    "bg-secondary": #6c757d,
+    "bg-primary": #c96480,
+    "bg-secondary": #606c38,
     "bg-success": #25b847,
     "bg-info": #20BFD9,
     "bg-warn": #ffc107,
