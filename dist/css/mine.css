@@ -2362,6 +2362,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-primary-sliced-top-left:hover {
   background-image: linear-gradient(-45deg, #b94162 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-primary-sliced-top-left:focus {
@@ -2378,6 +2379,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-primary-sliced-top-right:hover {
   background-image: linear-gradient(45deg, #b94162 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-primary-sliced-top-right:focus {
@@ -2394,6 +2396,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-primary-sliced-bottom-left:hover {
   background-image: linear-gradient(-135deg, #b94162 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-primary-sliced-bottom-left:focus {
@@ -2410,6 +2413,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-primary-sliced-bottom-right:hover {
   background-image: linear-gradient(135deg, #b94162 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-primary-sliced-bottom-right:focus {
@@ -2426,6 +2430,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-secondary-sliced-top-left:hover {
   background-image: linear-gradient(-45deg, #424a27 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-secondary-sliced-top-left:focus {
@@ -2442,6 +2447,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-secondary-sliced-top-right:hover {
   background-image: linear-gradient(45deg, #424a27 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-secondary-sliced-top-right:focus {
@@ -2458,6 +2464,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-secondary-sliced-bottom-left:hover {
   background-image: linear-gradient(-135deg, #424a27 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-secondary-sliced-bottom-left:focus {
@@ -2474,6 +2481,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-secondary-sliced-bottom-right:hover {
   background-image: linear-gradient(135deg, #424a27 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-secondary-sliced-bottom-right:focus {
@@ -2490,6 +2498,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-success-sliced-top-left:hover {
   background-image: linear-gradient(-45deg, #1c8e37 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-success-sliced-top-left:focus {
@@ -2506,6 +2515,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-success-sliced-top-right:hover {
   background-image: linear-gradient(45deg, #1c8e37 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-success-sliced-top-right:focus {
@@ -2522,6 +2532,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-success-sliced-bottom-left:hover {
   background-image: linear-gradient(-135deg, #1c8e37 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-success-sliced-bottom-left:focus {
@@ -2538,6 +2549,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-success-sliced-bottom-right:hover {
   background-image: linear-gradient(135deg, #1c8e37 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-success-sliced-bottom-right:focus {
@@ -2554,6 +2566,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-info-sliced-top-left:hover {
   background-image: linear-gradient(-45deg, #1998ad 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-info-sliced-top-left:focus {
@@ -2570,6 +2583,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-info-sliced-top-right:hover {
   background-image: linear-gradient(45deg, #1998ad 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-info-sliced-top-right:focus {
@@ -2586,6 +2600,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-info-sliced-bottom-left:hover {
   background-image: linear-gradient(-135deg, #1998ad 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-info-sliced-bottom-left:focus {
@@ -2602,6 +2617,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-info-sliced-bottom-right:hover {
   background-image: linear-gradient(135deg, #1998ad 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-info-sliced-bottom-right:focus {
@@ -2618,6 +2634,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-warn-sliced-top-left:hover {
   background-image: linear-gradient(-45deg, #d39e00 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-warn-sliced-top-left:focus {
@@ -2634,6 +2651,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-warn-sliced-top-right:hover {
   background-image: linear-gradient(45deg, #d39e00 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-warn-sliced-top-right:focus {
@@ -2650,6 +2668,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-warn-sliced-bottom-left:hover {
   background-image: linear-gradient(-135deg, #d39e00 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-warn-sliced-bottom-left:focus {
@@ -2666,6 +2685,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-warn-sliced-bottom-right:hover {
   background-image: linear-gradient(135deg, #d39e00 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-warn-sliced-bottom-right:focus {
@@ -2682,6 +2702,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-danger-sliced-top-left:hover {
   background-image: linear-gradient(-45deg, #bd2130 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-danger-sliced-top-left:focus {
@@ -2698,6 +2719,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-danger-sliced-top-right:hover {
   background-image: linear-gradient(45deg, #bd2130 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-danger-sliced-top-right:focus {
@@ -2714,6 +2736,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-danger-sliced-bottom-left:hover {
   background-image: linear-gradient(-135deg, #bd2130 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-danger-sliced-bottom-left:focus {
@@ -2730,6 +2753,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-danger-sliced-bottom-right:hover {
   background-image: linear-gradient(135deg, #bd2130 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-danger-sliced-bottom-right:focus {
@@ -2746,6 +2770,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-dark-sliced-top-left:hover {
   background-image: linear-gradient(-45deg, #1d2124 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-dark-sliced-top-left:focus {
@@ -2762,6 +2787,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-dark-sliced-top-right:hover {
   background-image: linear-gradient(45deg, #1d2124 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-dark-sliced-top-right:focus {
@@ -2778,6 +2804,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-dark-sliced-bottom-left:hover {
   background-image: linear-gradient(-135deg, #1d2124 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-dark-sliced-bottom-left:focus {
@@ -2794,6 +2821,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-dark-sliced-bottom-right:hover {
   background-image: linear-gradient(135deg, #1d2124 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-dark-sliced-bottom-right:focus {
@@ -2810,6 +2838,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-light-sliced-top-left:hover {
   background-image: linear-gradient(-45deg, #dae0e5 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-light-sliced-top-left:focus {
@@ -2826,6 +2855,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-light-sliced-top-right:hover {
   background-image: linear-gradient(45deg, #dae0e5 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-light-sliced-top-right:focus {
@@ -2842,6 +2872,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-light-sliced-bottom-left:hover {
   background-image: linear-gradient(-135deg, #dae0e5 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-light-sliced-bottom-left:focus {
@@ -2858,6 +2889,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 
 .bg-light-sliced-bottom-right:hover {
   background-image: linear-gradient(135deg, #dae0e5 92%, transparent 10%);
+  color: #fff;
 }
 
 .bg-light-sliced-bottom-right:focus {
@@ -3223,5 +3255,53 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 .mx-5 {
   margin-right: 5rem;
   margin-left: 5rem;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+
+.mh-100 {
+  max-height: 100%;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+.vh-100 {
+  height: 100vh;
 }
 /*# sourceMappingURL=mine.css.map */

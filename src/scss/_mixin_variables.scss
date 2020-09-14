@@ -51,6 +51,17 @@ $colors: (
     "bg-light": #f8f9fa
 );
 
+$percent-value: (
+    "25": 25%,
+    "50": 50%,
+    "75": 75%,
+    "100": 100%
+);
+
+$full-value: (
+    "100": 100%
+);
+
 // Dynamic text-color
 @function text-dynamic($font-color){
     @if (lightness($font-color) > 50) {
@@ -59,7 +70,7 @@ $colors: (
         @return #fff;
     }
 }
-// colors
+// background-colors
 @each $name, $color in $colors {
     .#{$name} {
         background-color: $color;

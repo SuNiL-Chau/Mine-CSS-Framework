@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine CSS Framework | Grid</title>
+    <link rel="stylesheet" href="/dist/css/mine.min.css">
+</head>
+<body>
+    
+    <div class="container is-fluid py-5 bg-primary">
+        <div class="row center middle">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+            <!-- Heading -->
+            <h1 class="massive-3">Mine CSS Framework</h1>
+            <p class="prime">A text which stands out in its own way ;)</p>
+            </div>
+        </div> 
+    </div>
+
+    <div class="container is-fluid">
+        <div class="row around-xs">
+            <a href="/index.html">Home</a>
+            <a href="/src/pages/grid.html">Grid System</a>
+            <a href="/src/pages/content.html">Contents CSS</a>
+            <a href="/src/pages/component.html">Component CSS</a>
+        </div>
+    </div>
+
+    <div class="container-sm">
+        <h2 class="text-center">Grid System</h2>
+    </div>
+    <!-- responsive example -->
+    <div class="container-sm py-2">
+        <div class="row">
+            <h3>Responsive</h3>
+            <p>Responsive classes of different column defines its sizes, offsets, alignments and distributions at different viewports which are xs, sm, md & lg.</p>
+            <p>Here is an example:</p>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
+                <div class="bg-secondary text-center py-1">Column1</div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-8 col-lg-10">
+                <div class="bg-secondary text-center py-1">Column2</div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+                <div class="bg-secondary text-center py-1">Column3</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText">
+                    &#60;div class="row"&#62; 
+                    &#60;div class="col-xs-12 col-sm-8 col-md-6 col-lg-4"&#62; 
+                    &#60;div class="bg-secondary text-center"&#62;Responsive&#60;/div&#62; 
+                    &#60;/div&#62; 
+                    &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText')">Copy Text</div>
+            </div>
+        </div>
+    </div>
+<!-- Offsets -->
+    <div class="container-sm py-2">
+        <h3>Offsets</h3>
+        <p>Offset a coulumn as per your wish it has offset from 1 to 11 check example below</p>
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-6">
+                <div class="bg-secondary text-center py-1">off6</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-offset">
+                    &#60;div class="row"&#62; 
+                        &#60;div class="col-xs-offset-6 col-xs-6"&#62; 
+                            &#60;div class="bg-secondary text-center"&#62;offset&#60;/div&#62;
+                        &#60;/div&#62;
+                    &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-offset')">Copy Text</div>
+            </div>
+        </div>
+    </div>
+
+<!-- Auto Width -->
+    <div class="container-sm py-2">
+        <h3>Auto Width</h3>
+        <p>If you just put the columns class it will automatically have the width. here is an example:</p>
+        <div class="row">
+            <div class="col-xs">
+                <div class="bg-secondary text-center py-1">auto</div>
+            </div>
+            <div class="col-xs">
+                <div class="bg-secondary text-center py-1">auto</div>
+            </div>
+            <div class="col-xs">
+                <div class="bg-secondary text-center py-1">auto</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-auto">
+                    &#60;div class="row"&#62; &#60;div class="col-xs"&#62; &#60;div class="bg-secondary text-center py-1"&#62;auto&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs"&#62; &#60;div class="bg-secondary text-center py-1"&#62;auto&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs"&#62; &#60;div class="bg-secondary text-center py-1"&#62;auto&#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-auto')">Copy Text</div>
+            </div>
+        </div>
+    </div>
+
+<!-- Nesting elements -->
+    <div class="container-sm py-2">
+        <h3>Nesting Grids</h3>
+        <p>Nesting grids are possible. here is an example:</p>
+        <div class="row">
+            <div class="col-xs bg-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs bg-secondary">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs bg-success text-center">nesting</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs bg-info">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs bg-warn text-center">nesting</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-nest">
+                    &#60;div class="row"&#62; &#60;div class="col-xs bg-primary"&#62; &#60;div class="container"&#62; &#60;div class="row"&#62; &#60;div class="col-xs bg-secondary"&#62; nesting &#60;/div&#62; &#60;/div&#62; &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-nest')">Copy Text</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alignment -->
+    <div class="container-sm py-2">
+        <h3>Alignment</h3>
+        <p>You can align columns according to your need like start,center,middle & top,middle,bottom. here are the examples:</p>
+        <h4><code>.start-</code></h4>
+        <div class="container-sm py-1 bg-primary">
+            <div class="row start-xs">
+                <div class="col-xs-6 bg-secondary">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-align-top">
+                    &#60;div class="container-sm py-1 bg-primary"&#62; &#60;div class="row start-xs"&#62; &#60;div class="col-xs-6 bg-secondary"&#62; &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-align-top')">Copy Text</div>
+            </div>
+        </div>
+        <h4><code>.center-</code></h4>
+        <div class="container-sm py-1 bg-primary">
+            <div class="row center-xs">
+                <div class="col-xs-6 bg-secondary">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-align-center">
+                    &#60;div class="container-sm py-1 bg-primary"&#62; &#60;div class="row center-xs"&#62; &#60;div class="col-xs-6 bg-secondary"&#62; &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-align-center')">Copy Text</div>
+            </div>
+        </div>
+        <h4><code>.end-</code></h4>
+        <div class="container-sm py-1 bg-primary">
+            <div class="row end-xs">
+                <div class="col-xs-6 bg-secondary">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-align-end">
+                    &#60;div class="container-sm py-1 bg-primary"&#62; &#60;div class="row end-xs"&#62; &#60;div class="col-xs-6 bg-secondary"&#62; &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-align-end')">Copy Text</div>
+            </div>
+        </div>
+        <p>Let me show you and rel time example using these. squeeze the viewport or use dev tool.</p>
+        <div class="container py-1 bg-primary">
+            <div class="row center-xs end-sm">
+                <div class="col-xs-6 bg-secondary"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-align1">
+                    &#60;div class="container py-1 bg-primary"&#62; &#60;div class="row center-xs end-sm"&#62; &#60;div class="col-xs-6 bg-secondary"&#62;&#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-align1')">Copy Text</div>
+            </div>
+        </div>
+        <h4><code>.top-</code></h4>
+        <div class="row top-xs">
+            <div class="col-xs-6">
+                <div class="bg-secondary py-3"></div>
+            </div>
+            <div class="col-xs-6">
+                <div class="bg-secondary py-1"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-align-top">
+                    &#60;div class="row top-xs"&#62; &#60;div class="col-xs-6"&#62; &#60;div class="bg-secondary py-3"&#62;&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs-6"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-align-top')">Copy Text</div>
+            </div>
+        </div>
+        <h4><code>.middle-</code></h4>
+        <div class="row middle-xs">
+            <div class="col-xs-6">
+                <div class="bg-secondary py-3"></div>
+            </div>
+            <div class="col-xs-6">
+                <div class="bg-secondary py-1"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-align-middle">
+                    &#60;div class="row middle-xs"&#62; &#60;div class="col-xs-6"&#62; &#60;div class="bg-secondary py-3"&#62;&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs-6"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-align-middle')">Copy Text</div>
+            </div>
+        </div>
+        <h4><code>.bottom-</code></h4>
+        <div class="row bottom-xs">
+            <div class="col-xs-6">
+                <div class="bg-secondary py-3"></div>
+            </div>
+            <div class="col-xs-6">
+                <div class="bg-secondary py-1"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-align-bottom">
+                    &#60;div class="row bottom-xs"&#62; &#60;div class="col-xs-6"&#62; &#60;div class="bg-secondary py-3"&#62;&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs-6"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-align-bottom')">Copy Text</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid Spacings -->
+    <div class="container-sm py-2">
+        <h3>Grid Spacings</h3>
+        <p>Grid spacings class allow you to make your contents spacings within the row. Here are examples:</p>
+        <h4><code>.around-</code></h4>
+        <div class="container bg-primary">
+            <div class="row around-xs">
+                <div class="col-xs-2">
+                    <div class="bg-secondary py-1"></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="bg-secondary py-1"></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="bg-secondary py-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-around">
+                    &#60;div class="container bg-primary"&#62; &#60;div class="row around-xs"&#62; &#60;div class="col-xs-2"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs-2"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs-2"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-around')">Copy Text</div>
+            </div>
+        </div>
+        <h4><code>.between-</code></h4>
+        <div class="container bg-primary">
+            <div class="row between-xs">
+                <div class="col-xs-2">
+                    <div class="bg-secondary py-1"></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="bg-secondary py-1"></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="bg-secondary py-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-between">
+                    &#60;div class="container bg-primary"&#62; &#60;div class="row between-xs"&#62; &#60;div class="col-xs-2"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs-2"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;div class="col-xs-2"&#62; &#60;div class="bg-secondary py-1"&#62;&#60;/div&#62; &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-between')">Copy Text</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- order Spacings -->
+    <div class="container-sm py-2">
+        <h3>Order</h3>
+        <p>Add these classes to reorder your columns. Here are examples:</p>
+        <h4><code>.first-</code></h4>
+        <div class="container bg-primary py-1">
+            <div class="row between-xs">
+                <div class="col-xs-2 bg-secondary py-1">
+                    1
+                </div>
+                <div class="col-xs-2 bg-secondary py-1">
+                    2
+                </div>
+                <div class="col-xs-2 bg-info py-1 first-sm">
+                    3
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-order-f">
+                    &#60;div class="container bg-primary py-1"&#62; &#60;div class="row between-xs"&#62; &#60;div class="col-xs-2 bg-secondary py-1"&#62; 1 &#60;/div&#62; &#60;div class="col-xs-2 bg-secondary py-1"&#62; 2 &#60;/div&#62; &#60;div class="col-xs-2 bg-info py-1 first-sm"&#62; 3 &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-order-f')">Copy Text</div>
+            </div>
+        </div>
+        <h4><code>.last-</code></h4>
+        <div class="container bg-primary py-1">
+            <div class="row between-xs">
+                <div class="col-xs-2 bg-info py-1 last-sm">
+                    1
+                </div>
+                <div class="col-xs-2 bg-secondary py-1">
+                    2
+                </div>
+                <div class="col-xs-2 bg-secondary py-1">
+                    3
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-order-l">
+                    &#60;div class="container bg-primary py-1"&#62; &#60;div class="row between-xs"&#62; &#60;div class="col-xs-2 bg-info py-1 last-sm"&#62; 1 &#60;/div&#62; &#60;div class="col-xs-2 bg-secondary py-1"&#62; 2 &#60;/div&#62; &#60;div class="col-xs-2 bg-secondary py-1"&#62; 3 &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-order-l')">Copy Text</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- revrse -->
+    <div class="container-sm py-2">
+        <h3>Reverse</h3>
+        <p>You can reverse the columns using a single class. Here is an example:</p>
+        <h4><code>.reverse</code></h4>
+        <div class="container bg-primary py-1">
+            <div class="row between-xs">
+                <div class="col-xs-2 bg-secondary py-1">
+                    1
+                </div>
+                <div class="col-xs-2 bg-secondary py-1">
+                    2
+                </div>
+                <div class="col-xs-2 bg-secondary py-1">
+                    3
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="codeText-reverse">
+                    &#60;div class="container bg-primary py-1"&#62; &#60;div class="row between-xs"&#62; &#60;div class="col-xs-2 bg-secondary py-1"&#62; 1 &#60;/div&#62; &#60;div class="col-xs-2 bg-secondary py-1"&#62; 2 &#60;/div&#62; &#60;div class="col-xs-2 bg-secondary py-1"&#62; 3 &#60;/div&#62; &#60;/div&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText-reverse')">Copy Text</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/js/jquery.min.js"></script>
+    <script src="/src/js/mine.js"></script>
+</body>
+</html>

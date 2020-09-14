@@ -94,3 +94,29 @@ body {
         margin-left: $x + ($i * 1rem);
     }
 }
+
+@each $name, $value in $percent-value{
+    .w-#{$name}{
+        width: $value;
+    }
+    .h-#{$name}{
+        height: $value;
+    }
+}
+
+@each $name, $value in $full-value{
+    .mw-#{$name}{
+        max-width: $value;
+    }
+    .mh-#{$name}{
+        max-height: $value;
+    }
+}
+
+.vw-100{
+    width: 100vw;
+}
+
+.vh-100{
+    height: 100vh;
+}
