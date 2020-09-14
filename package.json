@@ -1,0 +1,27 @@
+{
+  "name": "mine-css-framework",
+  "version": "1.0.0",
+  "description": "HI, this is Sunil Chaudhary a Web developer beginner this my first big project. This an CSS framework which is created from taking inpiration from Bootstrap. Feel free to use it on your project.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuNiL-Chau/Mine-CSS-Framework.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework",
+    "Mine",
+    "css",
+    "Mine",
+    "CSS"
+  ],
+  "author": "Sunil Chaudhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuNiL-Chau/Mine-CSS-Framework/issues"
+  },
+  "homepage": "https://github.com/SuNiL-Chau/Mine-CSS-Framework#readme"
+}
