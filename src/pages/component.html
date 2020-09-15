@@ -191,11 +191,35 @@
                 Single toggle
             </button>
         </div>
+        <!-- Dropdown -->
+        <div class="container-sm py-1">
+            <h3>dropdown example below</h3>
+            <div class="py-1">
+                <ul class="dropdown inline-list">
+                    <li class="inline-list-item">
+                        <a href="#">link</a>
+                    </li>
+                    <li class="inline-list-item">
+                        <a href="#">link</a>
+                    </li>
+                    <li class="inline-list-item">
+                        <a id="dropBtn" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div id="main-drop" class=" drop-content hide">
+                            <ul role="menu" class="unstyle-list bg-dark">
+                                <li class="list-item"><a class="list-link" href="#">Dropdown links</a></li>
+                                <li class="list-item"><a class="list-link" href="#">Dropdown links</a></li>
+                                <li class="list-item"><a class="list-link" href="#">Dropdown links</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/mine.js"></script>
+    <script src="/src/js/jquery.min.js"></script>
+    <script src="/src/js/mine.js"></script>
 </body>
 
 </html>
