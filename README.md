@@ -6,7 +6,7 @@ This is my self project which I'm working on. This is a CSS Framework created wi
 
 So might find this CSS framework little similar to it.
 
-The naming convention are also kept as mine-*.
+The naming convention are also kept as per the elements.
 
 Feel free to check out bit by downloading it.
 
