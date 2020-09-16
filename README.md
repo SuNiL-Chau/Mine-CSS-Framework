@@ -1,6 +1,8 @@
-# Mine-CSS-Framework
+<img  width="100" height="100" src="Mine_CSS.png" alt="Mine CSS Framework Logo" />
 
-Hi, This is Sunil Chaudhary!
+# Mine CSS Framework
+
+Hi, This is **Sunil Chaudhary!**
 
 This is my self project which I'm working on. This is a CSS Framework created with the inpiration from the Bootstrap V4.5 which is curently the latest one.
 
