@@ -4,12 +4,14 @@
 
 Hi, This is **Sunil Chaudhary!**
 
-This is my self project which I'm working on. This is a CSS Framework created with the inpiration from the Bootstrap V4.5 which is curently the latest one.
+This is my first self open source project which I'm working on. This is a CSS Framework created by taking inpiration from the Bootstrap.
 
-So might find this CSS framework little similar to it.
+The Project name is **_Mine CSS_**.
 
-The naming convention are also kept as per the elements.
+The package will be release soon on **_NPM package_** & **_CDN_** as possible.
 
-Feel free to check out bit by downloading it.
+The naming conventions of elements are kept as per element.
 
-<h2 style="color: red;"><b>Note: I'm Still working on it it might be unstable in one or the another way.</b></h2>
+Feel free to check out bit by forking the repo.
+
+## **Note: I'm Still working on it it might be unstable in one or the another way.**
