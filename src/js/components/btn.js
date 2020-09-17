@@ -1,10 +1,13 @@
 // btn
-const Button = $(document).ready(function () {
+const Button = $(function () {
+    // variables
     var btnToggle = $("[data-toggle=button]");
-    btnToggle.click(function () {
+    // function
+    btnToggle.on("click", function () {
         $(this).attr('aria-pressed',$(this).attr('aria-pressed')==='true'?'false':'true' );
         $(this).toggleClass("active").toggleClass("focus");
     });
+
 });
 
 export {Button}
