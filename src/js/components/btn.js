@@ -1,5 +1,5 @@
 // btn
-const Button = $(function () {
+const Button = jQuery(function () {
     // variables
     var btnToggle = $("[data-toggle=button]");
     // function

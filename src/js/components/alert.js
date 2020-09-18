@@ -1,6 +1,6 @@
 // Alert
 
-const Alert = $(function() {
+const Alert = jQuery(function () {
     // variables
     var Alert_closeBtn = $(".alert-closeable button.close");
     // function

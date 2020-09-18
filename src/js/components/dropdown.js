@@ -1,4 +1,4 @@
-const Dropdown = $(function () {
+const Dropdown = jQuery(function () {
     // variables
     var dropDwn = $(".dropdown");
     var dropBtn = $("[data-toggle=dropdown]");
