@@ -211,7 +211,7 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
 }
 
 .dropdown{
-    display: block;
+    display: inline-block;
     width: max-content;
 }
 
@@ -232,6 +232,81 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
             & .list-link{
                 text-decoration: none;
             }
+        }
+    }
+}
+
+// btn-stack
+@mixin stack-prop {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+@mixin stack-btns{
+    position: relative;
+    flex: 1 1 auto;
+}
+
+
+
+.btn-stack {
+    @include stack-prop();
+    & > .btn {
+        @include stack-btns();
+        &:not(:first-child){
+            margin-left: -1px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:not(:last-child):not(.dropdown){
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    & > &:not(:first-child){
+        margin-left: -1px;
+    }
+    & > &:not(:first-child) > .btn{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    & > &:not(:last-child) > .btn{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.btn-stack-y{
+    @include stack-prop();
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    & > .btn {
+        @include stack-btns();
+        width: 100%;
+        &:not(:first-child){
+            margin-top: -1px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        &:not(:last-child):not(.dropdown){
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    & > .btn-stack{
+        width: 100%;
+        &:not(:first-child){
+            margin-top: -1px;
+        }
+        &:not(:first-child) > .btn{
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        &:not(:last-child) > .btn{
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
         }
     }
 }

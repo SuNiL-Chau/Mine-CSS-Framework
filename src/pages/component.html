@@ -195,14 +195,14 @@
         <div class="container-sm py-1">
             <h3>dropdown example below</h3>
             <div class="py-1">
-                <ul class="dropdown inline-list">
+                <ul class="inline-list">
                     <li class="inline-list-item">
                         <a href="#">link</a>
                     </li>
                     <li class="inline-list-item">
                         <a href="#">link</a>
                     </li>
-                    <li class="inline-list-item">
+                    <li class="dropdown inline-list-item">
                         <a id="dropBtn" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                         <div id="main-drop" class=" drop-content hide">
                             <ul role="menu" class="unstyle-list bg-dark">
@@ -215,7 +215,44 @@
                 </ul>
             </div>
         </div>
+
+        <div class="container-sm py-1">
+            <h3>Button stack</h3>
+            <p>Use <code>.btn-stack</code> to group bunch of buttons in horizontal way & <code>.btn-stack-y</code> for vertical align. here is an example of both:</p>
+
+            <div class="container p-0">
+                <div class="btn-stack" role="group" aria-label="An normal example">
+                    <button type="button" class="btn btn-secondary">First</button>
+                    <button type="button" class="btn btn-secondary">Second</button>
+                    <div class="btn-stack dropdown">
+                        <a id="dropBtn" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div id="main-drop" class=" drop-content hide">
+                            <ul role="menu" class="unstyle-list bg-dark">
+                                <li class="list-item"><a class="list-link" href="#">Dropdown links</a></li>
+                                <li class="list-item"><a class="list-link" href="#">Dropdown links</a></li>
+                                <li class="list-item"><a class="list-link" href="#">Dropdown links</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary">Last</button>
+                </div>
+            </div>
+            <div class="container p-0 py-1">
+                <div class="btn-stack-y" role="group" aria-label="An normal example">
+                    <button type="button" class="btn btn-secondary">First</button>
+                    <button type="button" class="btn btn-secondary">Second</button>
+                    <button type="button" class="btn btn-secondary">Last</button>
+                </div>
+            </div>
+            
+        </div>
+
     </div>
+
+            <!-- <div class="container-sm py-2">
+        <h3 class="text-center">Card</h3>
+
+    </div> -->
 
     <script src="/dist/js/Mine.bundle.js"></script>
 </body>
