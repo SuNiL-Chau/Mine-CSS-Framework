@@ -37,22 +37,6 @@ body {
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-plex {
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.font-plex-con {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-}
-
-.font-plex-serif {
-  font-family: 'IBM Plex Serif', serif;
-}
-
-.font-plex-mono {
-  font-family: 'IBM Plex Mono', monospace;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1449,43 +1433,6 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  legend {
-    font-size: calc(1.275rem + 0.3vw);
-  }
-  h1,
-  .h1 {
-    font-size: calc(1.375rem + 1.5vw);
-  }
-  h2,
-  .h2 {
-    font-size: calc(1.325rem + 0.9vw);
-  }
-  h3,
-  .h3 {
-    font-size: calc(1.3rem + 0.6vw);
-  }
-  h4,
-  .h4 {
-    font-size: calc(1.275rem + 0.3vw);
-  }
-  .massive-1 {
-    font-size: calc(1.725rem + 5.7vw);
-  }
-  .massive-2 {
-    font-size: calc(1.675rem + 5.1vw);
-  }
-  .massive-3 {
-    font-size: calc(1.575rem + 3.9vw);
-  }
-  .massive-4 {
-    font-size: calc(1.475rem + 2.7vw);
-  }
-  .close {
-    font-size: calc(1.275rem + 0.3vw);
-  }
-}
-
 pre,
 code,
 kbd,
@@ -1528,6 +1475,182 @@ pre code {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
+}
+
+/* This was launched in 2020 mid & skip rendering work for faster performance
+kindly use at risk check the w3c documentation on css containment when this was added in this framework it was working on latest chrome 85 */
+.content-visible-auto {
+  content-visibility: auto;
+}
+
+.content-visible {
+  content-visbility: visible;
+}
+
+.content-hidden {
+  content-visbility: hidden;
+}
+
+.content-hidden-match {
+  content-visbility: hidden-matchable;
+}
+
+.font-plex {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.font-plex-con {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.font-plex-serif {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.font-plex-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dae0e5;
+}
+
+figure {
+  margin-bottom: 1rem;
+}
+
+.fig {
+  display: inline-block;
+}
+
+.fig-img {
+  margin-bottom: 0.5rem;
+}
+
+.fig-caption {
+  font-size: 90%;
+  color: #606c38;
+}
+
+@media (max-width: 1200px) {
+  legend {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  h1,
+  .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  h2,
+  .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  h3,
+  .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  h4,
+  .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  .massive-1 {
+    font-size: calc(1.725rem + 5.7vw);
+  }
+  .massive-2 {
+    font-size: calc(1.675rem + 5.1vw);
+  }
+  .massive-3 {
+    font-size: calc(1.575rem + 3.9vw);
+  }
+  .massive-4 {
+    font-size: calc(1.475rem + 2.7vw);
+  }
+  .close {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+
+caption {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color: #606c38;
+  text-align: -webkit-matchparent;
+  caption-side: bottom;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #343a40;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: -webkit-match-parent;
+}
+
+.table th, .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #979696;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #979696;
+}
+
+.table tbody {
+  border-top: 2px solid #979696;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #979696;
+}
+
+.table-light {
+  background-color: #dae0e5;
+  color: #343a40;
+}
+
+.table-dark {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border-color: #979696;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid #979696;
+}
+
+.table-borderless th, .table-borderless td, .table-borderless tbody, .table-borderless thead th {
+  border: 0;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .h1,
@@ -1789,129 +1912,6 @@ a:not([href]) {
 a:not([href]):hover {
   color: inherit;
   text-decoration: none;
-}
-
-/* This was launched in 2020 mid & skip rendering work for faster performance
-kindly use at risk check the w3c documentation on css containment when this was added in this framework it was working on latest chrome 85 */
-.content-visible-auto {
-  content-visibility: auto;
-}
-
-.content-visible {
-  content-visbility: visible;
-}
-
-.content-hidden {
-  content-visbility: hidden;
-}
-
-.content-hidden-match {
-  content-visbility: hidden-matchable;
-}
-
-svg {
-  overflow: hidden;
-  vertical-align: middle;
-}
-
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-}
-
-.img-thumbnail {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.3rem;
-  padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dae0e5;
-}
-
-figure {
-  margin-bottom: 1rem;
-}
-
-.fig {
-  display: inline-block;
-}
-
-.fig-img {
-  margin-bottom: 0.5rem;
-}
-
-.fig-caption {
-  font-size: 90%;
-  color: #606c38;
-}
-
-caption {
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-  color: #606c38;
-  text-align: -webkit-matchparent;
-  caption-side: bottom;
-}
-
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  color: #343a40;
-  border-collapse: collapse;
-}
-
-.table th {
-  text-align: -webkit-match-parent;
-}
-
-.table th, .table td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #979696;
-}
-
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #979696;
-}
-
-.table tbody {
-  border-top: 2px solid #979696;
-}
-
-.table tbody + tbody {
-  border-top: 2px solid #979696;
-}
-
-.table-light {
-  background-color: #dae0e5;
-  color: #343a40;
-}
-
-.table-dark {
-  background-color: #343a40;
-  color: #f8f9fa;
-  border-color: #979696;
-}
-
-.table-bordered th, .table-bordered td {
-  border: 1px solid #979696;
-}
-
-.table-borderless th, .table-borderless td, .table-borderless tbody, .table-borderless thead th {
-  border: 0;
-}
-
-.table-responsive {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .alert {
@@ -2956,6 +2956,11 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
           flex: 1 1 auto;
 }
 
+.btn-stack > .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn-stack > .btn:not(:first-child) {
   margin-left: -1px;
   border-top-left-radius: 0;
@@ -2965,6 +2970,11 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 .btn-stack > .btn:not(:last-child):not(.dropdown) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.btn-stack > .btn-stack .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-stack > .btn-stack:not(:first-child) {
@@ -2979,6 +2989,10 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 .btn-stack > .btn-stack:not(:last-child) > .btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.btn-stack > .btn-stack.dropdown #main-drop {
+  top: 38px;
 }
 
 .btn-stack-y {
@@ -3007,6 +3021,11 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   width: 100%;
 }
 
+.btn-stack-y > .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn-stack-y > .btn:not(:first-child) {
   margin-top: -1px;
   border-top-left-radius: 0;
@@ -3022,6 +3041,11 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
   width: 100%;
 }
 
+.btn-stack-y > .btn-stack > .btn :focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn-stack-y > .btn-stack:not(:first-child) {
   margin-top: -1px;
 }
@@ -3034,6 +3058,14 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
 .btn-stack-y > .btn-stack:not(:last-child) > .btn {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.btn-stack-y > .btn-stack.dropdown #main-drop {
+  top: 38px;
+}
+
+#main-drop {
+  z-index: 990;
 }
 
 .p-0 {

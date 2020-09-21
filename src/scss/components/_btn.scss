@@ -254,6 +254,9 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
     @include stack-prop();
     & > .btn {
         @include stack-btns();
+        &:focus{
+            box-shadow: none;
+        }
         &:not(:first-child){
             margin-left: -1px;
             border-top-left-radius: 0;
@@ -263,6 +266,9 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
         }
+    }
+    & > & .btn:focus{
+            box-shadow: none;
     }
     & > &:not(:first-child){
         margin-left: -1px;
@@ -275,6 +281,11 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
+    & > &.dropdown{
+        #main-drop{
+            top: 38px;
+        }
+    }
 }
 
 .btn-stack-y{
@@ -285,6 +296,9 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
     & > .btn {
         @include stack-btns();
         width: 100%;
+        &:focus{
+            box-shadow: none;
+        }
         &:not(:first-child){
             margin-top: -1px;
             border-top-left-radius: 0;
@@ -297,6 +311,11 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
     }
     & > .btn-stack{
         width: 100%;
+        & > .btn{
+            :focus{
+                box-shadow: none;
+            }
+        }
         &:not(:first-child){
             margin-top: -1px;
         }
@@ -308,5 +327,14 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
         }
+        &.dropdown{
+            #main-drop{
+                top: 38px;
+            }
+        }
     }
+}
+
+#main-drop{
+    z-index: 990;
 }

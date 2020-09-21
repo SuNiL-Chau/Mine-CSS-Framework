@@ -6,23 +6,22 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-// Imports
-// typo
+// Base Imports
 @import './root';
-@import './content/font';
 @import './reset';
 @import './mixin_variables';
+
+// Grid Import
 @import './grid';
+
+// Container import
 @import './container';
-@import './Content/typography';
-@import './Content/content-visibility';
-@import './Content/image';
-@import './Content/table';
+
+// Content Import
+@import './Content/content';
 
 // component
-@import './components/alert';
-@import './components/btn';
-
+@import './components/component';
 
 // Padding 
 // Padding, pt, pb, pr, pl, py, px

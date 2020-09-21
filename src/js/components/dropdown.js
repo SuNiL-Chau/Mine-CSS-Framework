@@ -1,14 +1,13 @@
 const Dropdown = jQuery(function () {
     // variables
-    var dropDwn = $(".dropdown");
     var dropBtn = $("[data-toggle=dropdown]");
-    var dropContent = $("#main-drop");
+    var dropContent = $(".drop-content");
     // function
-    dropDwn.on("click", function () {
+    dropBtn.on("click", function () {
         
-        $(this).find(dropBtn).attr('aria-expanded',$(this).find(dropBtn).attr('aria-expanded')==='true'?'false':'true');
-        $(this).find(dropBtn).toggleClass("active").toggleClass("focus");
-        $(this).find(dropContent).toggleClass('show hide');
+        $(this).attr('aria-expanded',$(this).attr('aria-expanded')==='true'?'false':'true');
+        $(this).toggleClass("active").toggleClass("focus");
+        $(this).siblings(dropContent).toggleClass('show hide');
 
     });
 
