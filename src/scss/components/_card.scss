@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $white;
+  background-clip: border-box;
+  border: $border-1 $bg-gray;
+  border-radius: $border-radius;
+  
+  &>hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+}
