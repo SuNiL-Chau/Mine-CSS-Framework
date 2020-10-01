@@ -112,34 +112,66 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
 
 .btn-primary-outline{
     @include primary-outline;
+    &:focus{
+        outline: none;
+        box-shadow: none; 
+    }
 }
 
 .btn-secondary-outline{
     @include secondary-outline;
+    &:focus{
+        outline: none;
+        box-shadow: none; 
+    }
 }
 
 .btn-success-outline{
     @include success-outline;
+    &:focus{
+        outline: none;
+        box-shadow: none; 
+    }
 }
 
 .btn-info-outline{
     @include info-outline;
+    &:focus{
+        outline: none;
+        box-shadow: none; 
+    }
 }
 
 .btn-warn-outline{
     @include warn-outline;
+    &:focus{
+        outline: none;
+        box-shadow: none; 
+    }
 }
 
 .btn-danger-outline{
     @include danger-outline;
+    &:focus{
+        outline: none;
+        box-shadow: none; 
+    }
 }
 
 .btn-dark-outline{
     @include dark-outline;
+    &:focus{
+        outline: none;
+        box-shadow: none; 
+    }
 }
 
 .btn-light-outline{
     @include light-outline;
+    &:focus{
+        outline: none;
+        box-shadow: none; 
+    }
 }
 
 @each $name, $color in $colors {
@@ -336,5 +368,5 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
 }
 
 #main-drop{
-    z-index: 990;
+    z-index: $dropdown-zindex;
 }

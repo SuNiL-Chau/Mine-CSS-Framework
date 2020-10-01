@@ -18,10 +18,13 @@ $bg-dark: #343a40;
 $bg-darker: darken($bg-dark, 10%);
 $bg-light: #f8f9fa;
 $bg-light-less: darken($bg-light, 10%);
+
+// border & alert padding
 $border-radius: 0.3rem;
 $alert-pad: 0.75rem 1.25rem;
 
-$bg-primary-focus: lighten($bg-primary, 30%);
+// btn-focus color
+$bg-primary-focus: lighten($bg-primary, 20%);
 $bg-secondary-focus: lighten($bg-secondary, 30%);
 $bg-success-focus: lighten($bg-success, 30%);
 $bg-info-focus: lighten($bg-info, 30%);
@@ -29,6 +32,27 @@ $bg-warn-focus: lighten($bg-warn, 30%);
 $bg-danger-focus: lighten($bg-danger, 30%);
 $bg-dark-focus: lighten($bg-dark, 30%);
 $bg-light-focus: lighten($bg-light, 30%);
+
+// z-index of all components
+$dropdown-zindex: 1000 !default;
+$sticky-zindex: 1020 !default;
+$fixed-zindex: 1040 !default;
+$popper-backdrop-zindex: 1060 !default;
+$popper-zindex: 1080 !default;
+$popover-zindex: 1100 !default;
+$tooltip-zindex: 1120 !default;
+
+* {
+    &:hover{
+        z-index: 1;
+    }
+    &:active, &.active{
+        z-index: 2;
+    }
+    &:focus{
+        z-index: 3;
+    }
+}
 
 // font-weght
 $font-weights: (
