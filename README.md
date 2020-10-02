@@ -2,7 +2,7 @@
   <img  width="200" height="200" src="Mine_CSS.png" alt="Mine CSS Framework Logo" />
 </p>
 
-# Mine CSS Framework
+<h1 align="center">Mine CSS Framework</h1>
 
 Hi, This is **Sunil Chaudhary!**
 
