@@ -4,6 +4,12 @@
 
 ## Do Checkout
   - [Code Of Counduct](https://github.com/SuNiL-Chau/Mine-CSS-Framework/CODE_OF_CONDUCT)
+
+## Dependencies
+Before starting make sure you have installed all the dependencies.
+```Bash
+npm install
+```
  
 ## Testing 🔧
   - For testing kindly check code is running on Chrome, Firefox, IE and other browsers.
@@ -24,10 +30,13 @@
 ## Style Guide 🍃
   - Kindly use present tense.
   - Try to keep the sentence short, crisp & easy to understand
-  - Add the follow after the title if possibe:
-    - [BUG]: For adding a bug
-    - [FEATURE]: For adding a feature
-    - [WARN]: When removing code/file
-    - [DOC]: When updating/suggesting in doc
+  - Add the following after the title if possibe:
+    - :bug: : For adding a bug
+    - :sparkles: : For adding a feature
+    - :boom: : When removing code/file
+    - :memo: : When updating/suggesting in doc
+    - :package: : When changes are done in webpack config file
+    - :wrench: : When package file is updated
+    - :poop: : when updated bad code
     
 **Thank You for contributing!**
