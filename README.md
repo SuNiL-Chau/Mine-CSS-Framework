@@ -10,6 +10,7 @@ Mine is a **mordern css framework** based on [Flexbox](https://developer.mozilla
 *NPM & CDN installations are coming soon*
 
 **But if you wanna try the go ahead and fork the repo & import css & js from [dist/](/dist/) folder**
+
 **Note:** No need to install dependencies if you are not contributing. Then add css at the top of page & js at the end of page.
 ```html
 <link rel="stylesheet" href="/dist/css/mine.min.css">
