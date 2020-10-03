@@ -2,7 +2,7 @@
   "name": "mine-css-framework",
   "version": "1.0.0",
   "description": "Hi, This is Sunil Chaudhary! This is my self project which I'm working on. This is a CSS Framework created with the inpiration from the Bootstrap V4.5 which is curently the latest one. So might find this CSS framework little similar to it. The naming convention are also kept as mine-*.  Feel free to check out bit by downloading it.",
-  "main": "index.html",
+  "main": "/docs/index.html",
   "scripts": {
     "dev": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open",
