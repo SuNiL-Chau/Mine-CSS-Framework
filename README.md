@@ -18,7 +18,7 @@ Mine is a **mordern css framework** based on [Flexbox](https://developer.mozilla
 ```
 
 ## Usage
-Check out **[/pages](/src/pages/)** directory for the examples of usages. 
+Check out **[/docs](/docs/)** directory for the examples of usages. 
 
 ## Support
 Want to connect then go ahead & ping me on [![Twitter](https://img.shields.io/twitter/url?label=Linkedin&logo=linkedin&logoColor=blue&style=social&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsunil-c-b2a815136%2F)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FSuNiL-Chau%2FMine-CSS-Framework) .
