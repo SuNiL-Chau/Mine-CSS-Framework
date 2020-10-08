@@ -7,6 +7,6 @@ import { Button } from "./components/btn.js";
 import { Dropdown } from "./components/dropdown.js";
 
 copyToClipboard();
-Alert();
-Button();
-Dropdown();
+jQuery(Alert);
+jQuery(Button);
+jQuery(Dropdown);

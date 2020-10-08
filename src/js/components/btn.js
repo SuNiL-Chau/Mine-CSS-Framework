@@ -1,5 +1,5 @@
 // btn
-export const Button = jQuery(function () {
+export function Button() {
     // variables
     var btnToggle = $("[data-toggle=button]");
     // function
@@ -8,4 +8,4 @@ export const Button = jQuery(function () {
         $(this).toggleClass("active").toggleClass("focus");
     });
 
-});
+};
