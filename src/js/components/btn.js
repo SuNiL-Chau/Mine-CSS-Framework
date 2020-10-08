@@ -1,5 +1,5 @@
 // btn
-const Button = jQuery(function () {
+export const Button = jQuery(function () {
     // variables
     var btnToggle = $("[data-toggle=button]");
     // function
@@ -9,5 +9,3 @@ const Button = jQuery(function () {
     });
 
 });
-
-export {Button}

@@ -1,4 +1,4 @@
-const Dropdown = jQuery(function () {
+export const Dropdown = jQuery(function () {
     // variables
     var dropBtn = $("[data-toggle=dropdown]");
     var dropContent = $(".drop-content");
@@ -12,5 +12,3 @@ const Dropdown = jQuery(function () {
     });
 
 });
-
-export {Dropdown}

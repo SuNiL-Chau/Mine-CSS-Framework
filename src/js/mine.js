@@ -1,12 +1,12 @@
 // Added No Conflict so kindly use jQuery at the start of the function & then $ for rest.
 $.noConflict();
 
-import { Copy } from "./components/copyToClipboard";
-import { Alert } from "./components/alert";
-import { Button } from "./components/btn";
-import { Dropdown } from "./components/dropdown";
+import copyToClipboard from "./components/copyToClipboard.js";
+import { Alert } from "./components/alert.js";
+import { Button } from "./components/btn.js";
+import { Dropdown } from "./components/dropdown.js";
 
-Copy();
+copyToClipboard();
 Alert();
 Button();
 Dropdown();
