@@ -1,6 +1,6 @@
 // Alert
 
-export const Alert = jQuery(function () {
+export function Alert() {
     // variables
     var Alert_closeBtn = $(".alert-closeable button.close");
     // function
@@ -8,4 +8,4 @@ export const Alert = jQuery(function () {
         $(this).parent().removeClass("show"); 
         $(this).parent().addClass("hide"); 
     });
-});
+};

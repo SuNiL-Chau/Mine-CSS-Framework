@@ -1,4 +1,4 @@
-export const Dropdown = jQuery(function () {
+export function Dropdown() {
     // variables
     var dropBtn = $("[data-toggle=dropdown]");
     var dropContent = $(".drop-content");
@@ -10,5 +10,4 @@ export const Dropdown = jQuery(function () {
         $(this).siblings(dropContent).toggleClass('show hide');
 
     });
-
-});
+};

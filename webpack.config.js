@@ -30,5 +30,8 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         })
-    ]
+    ],
+    devServer: {
+        publicPath: '/dist/js'
+    }
 }
