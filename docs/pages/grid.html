@@ -60,7 +60,7 @@
                 </code>
             </div>
             <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
-                <div class="btn bg-primary-sliced-top-left" onclick="copyToClipboard('.codeText')">Copy Text</div>
+                <div class="btn bg-primary-sliced-top-left copy-btn">Copy Text</div>
             </div>
         </div>
     </div>
@@ -423,5 +423,11 @@
     </div>
 
     <script src="/dist/js/Mine.bundle.js"></script>
+    <script>
+        document.querySelector(".copy-btn").onclick = function() {
+            var result = copyToClipboard('.codeText');
+            console.log("copied?", result);
+        };
+    </script>
 </body>
 </html>
