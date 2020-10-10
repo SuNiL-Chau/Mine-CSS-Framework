@@ -1,0 +1,40 @@
+// display css
+
+@each $value in $display {
+    .d-#{$value} {
+        display: $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .d-xs-#{$value} {
+            display : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .d-sm-#{$value} {
+            display : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .d-md-#{$value} {
+            display : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .d-lg-#{$value} {
+            display : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .d-xl-#{$value} {
+            display : $value !important;
+        }
+    }
+}
+
+@media print {
+    @each $value in $display {
+        .d-print-#{$value} {
+            display: $value !important;
+        }
+    }
+}

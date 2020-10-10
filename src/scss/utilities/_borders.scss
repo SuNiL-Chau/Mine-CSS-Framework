@@ -1,0 +1,64 @@
+// borders utilities
+// borders
+@each $name in $borders {
+    .#{$name} {
+        #{$name} : $border-1 $bg-gray !important;
+    }
+}
+// border-less
+@each $value in $borders {
+    .#{$value}-0 {
+        #{$value} : $border-0 !important;
+    }
+}
+// border-colorful
+@each $names, $values in $outline-colors {
+    .border-#{$names}{
+        border-color: $values !important;
+    }
+}
+// rounded
+
+.rounded-sm {
+    border-radius: $border-radius-sm !important;
+}
+
+.rounded {
+    border-radius: $border-radius !important;
+}
+
+.rounded-0 {
+    border-radius: $border-0 !important;
+}
+
+.rounded-lg {
+    border-radius: $border-radius-lg !important;
+}
+
+.rounded-top {
+    border-top-left-radius: $border-radius !important;
+    border-top-right-radius: $border-radius !important;
+}
+
+.rounded-right {
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+}
+
+.rounded-left {
+    border-bottom-left-radius: $border-radius !important;
+    border-top-left-radius: $border-radius !important;
+}
+
+.rounded-pill {
+    border-radius: $border-radius-pill;
+}
+
+.rounded-circle {
+    border-radius: $border-radius-circle;
+}

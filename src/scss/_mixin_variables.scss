@@ -18,9 +18,15 @@ $bg-dark: #343a40;
 $bg-darker: darken($bg-dark, 10%);
 $bg-light: #f8f9fa;
 $bg-light-less: darken($bg-light, 10%);
+$bg-transparent: transparent;
+$black03 :rgba(0, 0, 0, 0.03);
+$black01 : rgba(0, 0, 0, 0.125);
+$transparent : transparent;
+
+// button shadow
+$btn-shadow: 0 0 0 4px;
 
 // border & alert padding
-$border-radius: 0.3rem;
 $alert-pad: 0.75rem 1.25rem;
 
 // btn-focus color
@@ -66,14 +72,29 @@ $font-weights: (
 );
 
 $colors: (
-    "bg-primary": #c96480,
-    "bg-secondary": #606c38,
-    "bg-success": #25b847,
-    "bg-info": #20BFD9,
-    "bg-warn": #ffc107,
-    "bg-danger": #dc3545,
-    "bg-dark": #343a40,
-    "bg-light": #f8f9fa
+    "bg-primary":$bg-primary,
+    "bg-secondary": $bg-secondary,
+    "bg-success": $bg-success,
+    "bg-info": $bg-info,
+    "bg-warn": $bg-warn,
+    "bg-danger": $bg-danger,
+    "bg-dark": $bg-dark,
+    "bg-light": $bg-light,
+    "bg-white": $white,
+    "bg-transparent": $bg-transparent
+);
+
+$outline-colors: (
+    "primary":$bg-primary,
+    "secondary": $bg-secondary,
+    "success": $bg-success,
+    "info": $bg-info,
+    "warn": $bg-warn,
+    "danger": $bg-danger,
+    "dark": $bg-dark,
+    "light": $bg-light,
+    "white": $white,
+    "transparent": $bg-transparent
 );
 
 $percent-value: (
@@ -87,6 +108,32 @@ $full-value: (
     "100": 100%
 );
 
+// borders variables
+$borders : (
+    "border", "border-top", "border-right", "border-bottom", "border-left"
+);
+$border-0: 0;
+$border-1: 1px solid;
+$border-2: 2px solid;
+$border-radius: 0.25rem;
+$border-radius-sm: 0.2rem;
+$border-radius-lg: 0.3rem;
+$border-radius-circle: 50%;
+$border-radius-pill: 50rem;
+$border-card : calc(0.25rem -1px);
+
+// Padding | table variables
+$pad-1: 0.75rem;
+$pad-2: 0.3rem;
+
+// width
+$full-width: 100%;
+
+// display var
+$display: (
+    "none", "inline", "inline-block", "block", "table", "table-cell", "table-row", "flex", "inline-flex"
+);
+
 // Dynamic text-color
 @function text-dynamic($font-color){
     @if (lightness($font-color) > 50) {
@@ -95,14 +142,6 @@ $full-value: (
         @return #fff;
     }
 }
-// background-colors
-@each $name, $color in $colors {
-    .#{$name} {
-        background-color: $color;
-        color: text-dynamic($color);
-    }
-}
-
 
 // font-function
 @function weight($weight-name){
@@ -290,4 +329,19 @@ $full-value: (
         background-color: $bg-light;
         color: text-dynamic($bg-light);
     }
+}
+
+@mixin card-img-base {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+@mixin card-border-top {
+    border-top-left-radius: $border-card;
+    border-top-right-radius: $border-card;
+}
+
+@mixin card-border-bottom {
+    border-bottom-left-radius: $border-card;
+    border-bottom-right-radius: $border-card;
 }

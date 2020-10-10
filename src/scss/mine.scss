@@ -23,6 +23,9 @@ body {
 // component
 @import './components/component';
 
+// Utilities
+@import './utilities/utilities';
+
 // Padding 
 // Padding, pt, pb, pr, pl, py, px
 @for $i from 0 through 5 {

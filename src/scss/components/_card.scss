@@ -1,3 +1,5 @@
+// Card scss
+
 .card {
   position: relative;
   display: flex;
@@ -13,5 +15,89 @@
     margin-right: 0;
     margin-left: 0;
   }
+
+  &-body {
+    flex: 1 1 auto;
+    padding: 1.2rem;
+    min-height: 1px;;
+  }
   
+  &-title {
+    margin-bottom: 0.7rem;
+  }
+  
+  &-subtitle {
+    margin-top: -0.3rem;
+    margin-bottom: 0;
+  }
+  
+  &-text:last-child {
+    margin-bottom: 0;
+  }
+
+  &-link{
+    
+    &:hover{
+      text-decoration: none;
+    }
+
+    & + & {
+      margin-left: 1.25rem;
+    }
+
+  }
+
+  &-header{
+    padding: $alert-pad;
+    margin-bottom: 0;
+    background-color: $black03;
+    border-bottom: $border-1 $black01;
+  }
+
+  &-footer {
+    padding: $alert-pad;
+    background-color: $black03;
+    border-top: $border-1 $black01;
+
+    &:last-child{
+      border-radius: 0 0 $border-card $border-card;
+    }
+
+  }
+
+  &-img, &-img-top, &-img-bottom {
+    @include card-img-base;
+  }
+
+  &-img, &-img-top {
+    @include card-border-top;
+  }
+
+  &-img, &-img-bottom {
+    @include card-border-bottom;
+  }
+  
+}
+
+// card layouts 
+
+.card-masonry {
+  & .card {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: $xs-max) {
+  .card-masonry {
+    column-count: 3;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+
+    & .card {
+      display: inline-block;
+      width: 100%;
+    }
+
+  }
 }
