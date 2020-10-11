@@ -1,0 +1,335 @@
+// flex  css
+
+// flex-direction
+
+@each $value in $f-direction {
+    .flex-#{$value} {
+        flex-direction : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .flex-xs-#{$value} {
+            flex-direction : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .flex-sm-#{$value} {
+            flex-direction : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .flex-md-#{$value} {
+            flex-direction : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .flex-lg-#{$value} {
+            flex-direction : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .flex-xl-#{$value} {
+            flex-direction : $value !important;
+        }
+    }
+}
+
+// justify-content
+
+@each $value in $justify-content {
+    .justify-content-#{$value} {
+        justify-content : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .justify-content-xs-#{$value} {
+            justify-content : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .justify-content-sm-#{$value} {
+            justify-content : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .justify-content-md-#{$value} {
+            justify-content : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .justify-content-lg-#{$value} {
+            justify-content : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .justify-content-xl-#{$value} {
+            justify-content : $value !important;
+        }
+    }
+}
+
+// align-items
+
+@each $value in $align-items {
+    .align-items-#{$value} {
+        align-items : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .align-items-xs-#{$value} {
+            align-items : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .align-items-sm-#{$value} {
+            align-items : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .align-items-md-#{$value} {
+            align-items : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .align-items-lg-#{$value} {
+            align-items : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .align-items-xl-#{$value} {
+            align-items : $value !important;
+        }
+    }
+}
+
+// align-self
+
+@each $value in $align-self {
+    .align-self-#{$value} {
+        align-self : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .align-self-xs-#{$value} {
+            align-self : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .align-self-sm-#{$value} {
+            align-self : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .align-self-md-#{$value} {
+            align-self : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .align-self-lg-#{$value} {
+            align-self : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .align-self-xl-#{$value} {
+            align-self : $value !important;
+        }
+    }
+}
+
+// flex-fill
+
+
+.flex-fill {
+    flex : $flex-fill !important;
+}
+@media only screen and (max-width: $xs-max) {
+    .flex-xs-fill {
+        flex : $flex-fill !important;
+    }
+}
+@media only screen and (min-width: $sm-start) {
+    .flex-sm-fill {
+        flex : $flex-fill !important;
+    }
+}
+@media only screen and (min-width: $md-start) {
+    .flex-md-fill {
+        flex : $flex-fill !important;
+    }
+}
+@media only screen and (min-width: $lg-start) {
+    .flex-lg-fill {
+        flex : $flex-fill !important;
+    }
+}
+@media only screen and (min-width: $xl-start) {
+    .flex-xl-fill {
+        flex : $flex-fill !important;
+    }
+}
+
+// grow shrink
+
+@each $name, $value in $grow-shrink-1 {
+    .flex-#{$name}-#{$value} {
+        flex-#{$name} : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .flex-xs-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .flex-sm-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .flex-md-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .flex-lg-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .flex-xl-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+}
+
+@each $name, $value in $grow-shrink-0 {
+    .flex-#{$name}-#{$value} {
+        flex-#{$name} : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .flex-xs-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .flex-sm-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .flex-md-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .flex-lg-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .flex-xl-#{$name}-#{$value} {
+            flex-#{$name} : $value !important;
+        }
+    }
+}
+
+// margin auto
+@each $name, $value in $margin-flex {
+    .m-#{$name}-#{$value} {
+        margin-#{$name}: $value !important;
+    }
+}
+
+// flex wrap
+
+@each $value in $wrap {
+    .flex-#{$value} {
+        flex-wrap : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .flex-xs-#{$value} {
+            flex-wrap : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .flex-sm-#{$value} {
+            flex-wrap : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .flex-md-#{$value} {
+            flex-wrap : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .flex-lg-#{$value} {
+            flex-wrap : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .flex-xl-#{$value} {
+            flex-wrap : $value !important;
+        }
+    }
+}
+
+// flex wrap
+
+@each $value in $order {
+    .order-#{$value} {
+        order : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .order-xs-#{$value} {
+            order : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .order-sm-#{$value} {
+            order : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .order-md-#{$value} {
+            order : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .order-lg-#{$value} {
+            order : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .order-xl-#{$value} {
+            order : $value !important;
+        }
+    }
+}
+
+// align-content
+
+@each $name, $value in $align-content {
+    .align-content-#{$name} {
+        align-content : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .align-content-xs-#{$name} {
+            align-content : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .align-content-sm-#{$name} {
+            align-content : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .align-content-md-#{$name} {
+            align-content : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .align-content-lg-#{$name} {
+            align-content : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .align-content-xl-#{$name} {
+            align-content : $value !important;
+        }
+    }
+}

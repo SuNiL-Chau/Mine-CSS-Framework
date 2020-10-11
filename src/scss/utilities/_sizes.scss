@@ -1,0 +1,41 @@
+// sizes inclused width heights etc.
+
+// widths & heights
+@each $name, $value in $percent-value{
+    .w-#{$name}{
+        width: $value !important;
+    }
+    .h-#{$name}{
+        height: $value !important;
+    }
+}
+
+// max width & height
+@each $name, $value in $full-value{
+    .mw-#{$name}{
+        max-width: $value !important;
+    }
+    .mh-#{$name}{
+        max-height: $value !important;
+    }
+}
+
+// full view height & width
+
+@each $name, $value in $full-view-w {
+    .vw-#{$name} {
+        width: $value !important;
+    }
+    .min-vw-#{$name} {
+        min-width: $value !important;
+    }
+}
+
+@each $name, $value in $full-view-h {
+    .vh-#{$name} {
+        height: $value !important;
+    }
+    .min-vh-#{$name} {
+        min-height: $value !important;
+    }
+}

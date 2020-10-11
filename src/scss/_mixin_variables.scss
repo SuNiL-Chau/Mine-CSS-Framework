@@ -2,9 +2,9 @@
 $white: #fff;
 $black: #000;
 $bg-gray: #979696;
-$bg-primary: #c96480;
+$bg-primary: #fc6e20;
 $bg-primary-dark: darken($bg-primary, 10%);
-$bg-secondary: #606c38;
+$bg-secondary: #6951ae;
 $bg-secondary-dark: darken($bg-secondary, 10%);
 $bg-success: #25b847;
 $bg-success-dark: darken($bg-success, 10%);
@@ -68,7 +68,7 @@ $font-weights: (
     "medium": 500,
     "bold": 700,
     "black": 800,
-    "black-heavey": 900
+    "black-heavy": 900
 );
 
 $colors: (
@@ -101,16 +101,25 @@ $percent-value: (
     "25": 25%,
     "50": 50%,
     "75": 75%,
-    "100": 100%
+    "100": 100%,
+    "auto": auto
 );
 
 $full-value: (
     "100": 100%
 );
 
+$full-view-w : (
+    "100": 100vw,
+);
+
+$full-view-h : (
+    "100": 100vh,
+);
+
 // borders variables
 $borders : (
-    "border", "border-top", "border-right", "border-bottom", "border-left"
+    border, border-top, border-right, border-bottom, border-left
 );
 $border-0: 0;
 $border-1: 1px solid;
@@ -131,7 +140,117 @@ $full-width: 100%;
 
 // display var
 $display: (
-    "none", "inline", "inline-block", "block", "table", "table-cell", "table-row", "flex", "inline-flex"
+    none, inline, inline-block, block, table, table-cell, table-row, flex, inline-flex
+);
+
+// flex vars
+$f-direction: (
+    row, row-reverse, column, column-reverse
+);
+
+$justify-content: (
+    start, end, center, between, around, evenly
+);
+
+$align-items: (
+    start, end, center, baseline, strech
+);
+
+$align-self: (
+    start, end, center, baseline, strech
+);
+
+$flex-fill : 1 1 auto;
+
+$grow-shrink-1 : (
+    "grow": 1,
+    "shrink": 1,
+);
+
+$grow-shrink-0 : (
+    "grow": 0,
+    "shrink": 0,
+);
+
+$margin-flex: (
+    "top": auto,
+    "right": auto,
+    "bottom": auto,
+    "left": auto
+);
+
+$wrap : (
+    wrap, nowrap, wrap-reverse
+);
+
+$order :(
+    0, 1, 2, 3, 4, 5
+);
+
+$align-content: (
+    "start": flex-start,
+    "end": flex-end,
+    "center": flex-center,
+    "between": flex-between,
+    "around": flex-around,
+    "strech": flex-strech
+);
+
+$float-val:(
+    left, right
+);
+
+$positions: (
+    static, relative, absolute, fixed, sticky
+);
+
+$pos-values: (
+    "0" : 0,
+    "50" : 50%,
+    "100" : 100%
+);
+
+$transform-values:(
+    "top-left": translateX(-50%) translateY(-50%),
+    "top-right": translateX(50%) translateY(-50%),
+    "bottom-right": translateX(50%) translateY(50%),
+    "bottom-left": translateX(-50%) translateY(50%)
+);
+
+$shadows: (
+    "none": none,
+    "sm": 0 .13rem .3rem rgba(0,0,0,.08),
+    "lg": 0 1rem 3rem rgba(0,0,0,.18),
+);
+
+$shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
+// text vars
+$text-align : (
+    left, center, right
+);
+
+$text-wrap : (
+    "wrap": normal,
+    "nowrap": nowrap
+);
+
+$text-transform : (
+    "lower": lowercase,
+    "upper": uppercase,
+    "caps": capitalize 
+);
+
+$line-heights-val : (
+    "xs": 1,
+    "sm": 1.25,
+    "base": 1.5,
+    "lg": 2,
+    "xl": 2.25,
+);
+
+$vertical-align-val : (
+    baseline, top, middle, bottom, text-top, text-bottom
 );
 
 // Dynamic text-color

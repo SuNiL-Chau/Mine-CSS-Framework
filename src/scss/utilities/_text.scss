@@ -1,0 +1,105 @@
+//  text css
+
+// text-alignments
+
+@each $value in $text-align {
+    .text-#{$value} {
+        text-align: $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .text-xs-#{$value} {
+            text-align : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .text-sm-#{$value} {
+            text-align : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .text-md-#{$value} {
+            text-align : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .text-lg-#{$value} {
+            text-align : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .text-xl-#{$value} {
+            text-align : $value !important;
+        }
+    }
+}
+
+// text wrap
+
+@each $name, $value in $text-wrap {
+    .text-#{$name} {
+        white-space: $value !important;
+    }
+}
+
+.text-break {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+// text transform
+@each $name, $value in $text-transform {
+    .text-#{$name} {
+        text-transform: $value !important;
+    }
+}
+
+// fonts weight & italic
+.font-weight-bold {
+    font-weight: weight(bold) !important;
+}
+.font-weight-bolder {
+    font-weight: weight(black-heavy) !important;
+}
+.font-weight-normal {
+    font-weight: weight(regular) !important;
+}
+.font-weight-light {
+    font-weight: weight(light) !important;
+}
+.font-weight-lighter {
+    font-weight: weight(thin) !important;
+}
+.font-style-italic {
+    font-style: italic !important;
+}
+.font-style-normal {
+    font-style: normal !important;
+}
+
+// line heights
+
+@each $name, $value in $line-heights-val {
+    .lh-#{$name} {
+        line-height: $value !important;
+    }
+}
+
+.font-monospace {
+    font-family: var(--font-family-monospace) !important;
+}
+
+.text-inherit {
+    color: inherit !important;
+}
+
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+
+.text-decoration-linethrough {
+    text-decoration: line-through !important;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}

@@ -1,0 +1,107 @@
+// spaces css
+
+// Padding 
+// Padding, pt, pb, pr, pl, py, px
+@for $i from 0 through 5 {
+    $x: 0rem;
+    // padding around
+    .p-#{$i}{
+        padding: $x + ($i * 1rem) !important;
+    }
+    // padding top
+    .pt-#{$i}{
+        padding-top: $x + ($i * 1rem) !important;
+    }
+    // padding-bottom
+    .pb-#{$i}{
+        padding-bottom: $x + ($i * 1rem) !important;
+    }
+    // padding-left
+    .pl-#{$i}{
+        padding-left: $x + ($i * 1rem) !important;
+    }
+    // padding-right
+    .pr-#{$i}{
+        padding-right: $x + ($i * 1rem) !important;
+    }
+    // padding top bottom
+    .py-#{$i}{
+        padding-top: $x + ($i * 1rem) !important;
+        padding-bottom: $x + ($i * 1rem) !important;
+    }
+    // padding right left
+    .px-#{$i}{
+        padding-right: $x + ($i * 1rem) !important;
+        padding-left: $x + ($i * 1rem) !important;
+    }
+}
+
+// Margins 
+@for $i from 0 through 5 {
+    $x: 0rem;
+    // margin around
+    .m-#{$i}{
+        margin: $x + ($i * 1rem) !important;
+    }
+    // margin top
+    .mt-#{$i}{
+        margin-top: $x + ($i * 1rem) !important;
+    }
+    // margin bottom
+    .mb-#{$i}{
+        margin-bottom: $x + ($i * 1rem) !important;
+    }
+    // margin left
+    .ml-#{$i}{
+        margin-left: $x + ($i * 1rem) !important;
+    }
+    // margin-right
+    .mr-#{$i}{
+        margin-right: $x + ($i * 1rem) !important;
+    }
+    // margin top bottom
+    .my-#{$i}{
+        margin-top: $x + ($i * 1rem) !important;
+        margin-bottom: $x + ($i * 1rem) !important;
+    }
+    // margin right left
+    .mx-#{$i}{
+        margin-right: $x + ($i * 1rem) !important;
+        margin-left: $x + ($i * 1rem) !important;
+    }
+}
+
+// Negative Margins 
+@for $i from 0 through 5 {
+    $x: 0rem;
+    // margin around
+    .m-n#{$i}{
+        margin: $x - ($i * 1rem) !important;
+    }
+    // margin top
+    .mt-n#{$i}{
+        margin-top: $x - ($i * 1rem) !important;
+    }
+    // margin bottom
+    .mb-n#{$i}{
+        margin-bottom: $x - ($i * 1rem) !important;
+    }
+    // margin left
+    .ml-n#{$i}{
+        margin-left: $x - ($i * 1rem) !important;
+    }
+    // margin-right
+    .mr-n#{$i}{
+        margin-right: $x - ($i * 1rem) !important;
+    }
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}

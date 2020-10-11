@@ -1,0 +1,43 @@
+// positions css
+
+@each $value in $positions {
+    .position-#{$value} {
+        position : $value !important;
+    }
+}
+
+// top loop
+@each $name, $value in $pos-values {
+    .top-#{$name} {
+        top: $value !important;
+    }
+}
+
+// right loop
+@each $name, $value in $pos-values {
+    .right-#{$name} {
+        right: $value !important;
+    }
+}
+
+// bottom loop
+@each $name, $value in $pos-values {
+    .bottom-#{$name} {
+        bottom: $value !important;
+    }
+}
+
+// left loop
+@each $name, $value in $pos-values {
+    .left-#{$name} {
+        left: $value !important;
+    }
+}
+
+// Transform loop
+
+@each $name, $value in $transform-values {
+    .transform-#{$name}{
+        transform: $value !important;
+    }
+}

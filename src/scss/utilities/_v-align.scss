@@ -1,0 +1,7 @@
+// vertical alignments
+
+@each $value in $vertical-align-val {
+    .align-#{$value} {
+        vertical-align: $value !important;
+    }
+}

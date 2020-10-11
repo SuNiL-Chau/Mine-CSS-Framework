@@ -1,0 +1,11 @@
+// shadow css
+
+@each $name, $value in $shadows {
+    .shadow-#{$name} {
+        box-shadow: $value !important;
+    }
+}
+
+.shadow {
+    box-shadow: $shadow;
+}

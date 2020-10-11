@@ -1,0 +1,32 @@
+// float css
+
+@each $value in $float-val {
+    .float-#{$value} {
+        float : $value !important;
+    }
+    @media only screen and (max-width: $xs-max) {
+        .float-xs-#{$value} {
+            float : $value !important;
+        }
+    }
+    @media only screen and (min-width: $sm-start) {
+        .float-sm-#{$value} {
+            float : $value !important;
+        }
+    }
+    @media only screen and (min-width: $md-start) {
+        .float-md-#{$value} {
+            float : $value !important;
+        }
+    }
+    @media only screen and (min-width: $lg-start) {
+        .float-lg-#{$value} {
+            float : $value !important;
+        }
+    }
+    @media only screen and (min-width: $xl-start) {
+        .float-xl-#{$value} {
+            float : $value !important;
+        }
+    }
+}
