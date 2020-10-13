@@ -256,9 +256,9 @@ $vertical-align-val : (
 // Dynamic text-color
 @function text-dynamic($font-color){
     @if (lightness($font-color) > 50) {
-        @return #000;
+        @return $black;
     } @else {
-        @return #fff;
+        @return $white;
     }
 }
 
@@ -281,7 +281,7 @@ $vertical-align-val : (
 }
 
 @mixin primary-outline {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $bg-primary;
     color: $bg-primary;
     &:hover{
@@ -304,7 +304,7 @@ $vertical-align-val : (
 }
 
 @mixin secondary-outline {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $bg-secondary;
     color: $bg-secondary;
     &:hover{
@@ -327,7 +327,7 @@ $vertical-align-val : (
 }
 
 @mixin success-outline {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $bg-success;
     color: $bg-success;
     &:hover{
@@ -350,7 +350,7 @@ $vertical-align-val : (
 }
 
 @mixin info-outline {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $bg-info;
     color: $bg-info;
     &:hover{
@@ -373,7 +373,7 @@ $vertical-align-val : (
 }
 
 @mixin warn-outline {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $bg-warn;
     color: $bg-warn;
     &:hover{
@@ -396,7 +396,7 @@ $vertical-align-val : (
 }
 
 @mixin danger-outline {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $bg-danger;
     color: $bg-danger;
     &:hover{
@@ -419,7 +419,7 @@ $vertical-align-val : (
 }
 
 @mixin dark-outline {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $bg-dark;
     color: $bg-dark;
     &:hover{
@@ -441,7 +441,7 @@ $vertical-align-val : (
 }
 
 @mixin light-outline {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $bg-light-less;
     color: $bg-light-less;
     &:hover{
