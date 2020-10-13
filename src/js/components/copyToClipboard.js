@@ -2,9 +2,10 @@
 // copy Text to Clipboard
 export function copyToClipboard(text) {
 
-    text = document.querySelector('.codeText').textContent;
+    text = document.querySelector(".codeText").textContent;
     if (window.clipboardData && window.clipboardData.setData) {
         // Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
+        // eslint-disable-next-line no-undef
         return clipboardData.setData("Text", text);
 
     }
