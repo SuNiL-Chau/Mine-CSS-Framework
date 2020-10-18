@@ -1,45 +1,47 @@
 @media (max-width: 1200px) {
-    legend {
-        font-size: calc(1.275rem + 0.3vw) !important;
-    }
-
-    h1,
-    .h1 {
-        font-size: calc(1.375rem + 1.5vw) !important;
-    }
-
-    h2,
-    .h2 {
-        font-size: calc(1.325rem + 0.9vw) !important;
-    }
-
-    h3,
-    .h3 {
-        font-size: calc(1.3rem + 0.6vw) !important;
-    }
-
-    h4,
-    .h4 {
-        font-size: calc(1.275rem + 0.3vw) !important;
-    }
-
-    .massive-1 {
-        font-size: calc(1.725rem + 5.7vw) !important;
-    }
-
-    .massive-2 {
-        font-size: calc(1.675rem + 5.1vw) !important;
-    }
-
-    .massive-3 {
-        font-size: calc(1.575rem + 3.9vw) !important;
-    }
-
-    .massive-4 {
-        font-size: calc(1.475rem + 2.7vw) !important;
-    }
-
-    .close {
-        font-size: calc(1.275rem + 0.3vw) !important;
+    @if ($Responsive-Font-Size) {
+        legend {
+            font-size: calc(1.275rem + 0.3vw) !important;
+        }
+    
+        h1,
+        .h1 {
+            font-size: calc(1.375rem + 1.5vw) !important;
+        }
+    
+        h2,
+        .h2 {
+            font-size: calc(1.325rem + 0.9vw) !important;
+        }
+    
+        h3,
+        .h3 {
+            font-size: calc(1.3rem + 0.6vw) !important;
+        }
+    
+        h4,
+        .h4 {
+            font-size: calc(1.275rem + 0.3vw) !important;
+        }
+    
+        .massive-1 {
+            font-size: calc(1.725rem + 5.7vw) !important;
+        }
+    
+        .massive-2 {
+            font-size: calc(1.675rem + 5.1vw) !important;
+        }
+    
+        .massive-3 {
+            font-size: calc(1.575rem + 3.9vw) !important;
+        }
+    
+        .massive-4 {
+            font-size: calc(1.475rem + 2.7vw) !important;
+        }
+    
+        .close {
+            font-size: calc(1.275rem + 0.3vw) !important;
+        }
     }
 }

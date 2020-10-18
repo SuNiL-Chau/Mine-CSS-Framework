@@ -38,3 +38,19 @@
         }
     }
 }
+
+// fade animation
+
+.fade {
+    transition: opacity 0.2s linear;
+}
+
+.fade:not(.show){
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce){
+    .fade {
+        transition: none;
+    }
+}

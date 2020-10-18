@@ -1,6 +1,6 @@
 .alert{
     position: relative;
-    padding: $alert-pad;
+    padding: $alert-pad1;
     margin-bottom: 1rem;
     border: $border-1 transparent;
     border-radius: $border-radius;
@@ -20,11 +20,12 @@
         position: absolute;
         top: 0;
         right: 0;
-        padding: 1rem;
+        padding: 0.6rem;
         color: inherit;
         background-color: transparent;
         border: 0;
-        font-size: 1rem;
+        font-size: 2rem;
+        font-family: serif;
         cursor: pointer;
         &:focus{
             outline: 0;
@@ -35,14 +36,13 @@
 @each $name, $color in $colors {
     .alert-#{$name} {
         color: darken($color, 20%);
-        background-color: lighten($color, 20%);
+        background-color: lighten($color, 35%);
         border-color: darken($color, 20%);
         & hr{
-            border-top-color: darken($color, 30%);
+            border-top-color: darken($color, 20%);
         }
         & .alert-link{
-            border-top-color: darken($color, 20%);
-            color: darken($color, 40%);
+            color: darken($color, 20%);
         }
     }
 }

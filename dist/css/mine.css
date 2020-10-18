@@ -1562,8 +1562,8 @@ figure {
 }
 
 caption {
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   color: #6951ae;
   text-align: -webkit-matchparent;
   caption-side: bottom;
@@ -1877,7 +1877,7 @@ a:not([href]):hover {
 
 .alert {
   position: relative;
-  padding: 0.75rem 1.25rem;
+  padding: 1rem 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
@@ -1899,11 +1899,12 @@ a:not([href]):hover {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.6rem;
   color: inherit;
   background-color: transparent;
   border: 0;
-  font-size: 1rem;
+  font-size: 2rem;
+  font-family: serif;
   cursor: pointer;
 }
 
@@ -1913,107 +1914,100 @@ a:not([href]):hover {
 
 .alert-bg-primary {
   color: #b44102;
-  background-color: #fdaf85;
+  background-color: #fee1d0;
   border-color: #b44102;
 }
 
 .alert-bg-primary hr {
-  border-top-color: #812f02;
+  border-top-color: #b44102;
 }
 
 .alert-bg-primary .alert-link {
-  border-top-color: #b44102;
-  color: #4f1d01;
+  color: #b44102;
 }
 
 .alert-bg-secondary {
   color: #3f3168;
-  background-color: #a597ce;
+  background-color: #d2cbe7;
   border-color: #3f3168;
 }
 
 .alert-bg-secondary hr {
-  border-top-color: #2a2046;
+  border-top-color: #3f3168;
 }
 
 .alert-bg-secondary .alert-link {
-  border-top-color: #3f3168;
-  color: #151023;
+  color: #3f3168;
 }
 
 .alert-bg-success {
   color: #146326;
-  background-color: #63e080;
+  background-color: #a3edb4;
   border-color: #146326;
 }
 
 .alert-bg-success hr {
-  border-top-color: #0b3916;
+  border-top-color: #146326;
 }
 
 .alert-bg-success .alert-link {
-  border-top-color: #146326;
-  color: #030e05;
+  color: #146326;
 }
 
 .alert-bg-info {
   color: #137180;
-  background-color: #74daeb;
+  background-color: #b7ecf4;
   border-color: #137180;
 }
 
 .alert-bg-info hr {
-  border-top-color: #0c4a54;
+  border-top-color: #137180;
 }
 
 .alert-bg-info .alert-link {
-  border-top-color: #137180;
-  color: #062327;
+  color: #137180;
 }
 
 .alert-bg-warn {
   color: #a07800;
-  background-color: #ffdb6d;
+  background-color: #ffeeba;
   border-color: #a07800;
 }
 
 .alert-bg-warn hr {
-  border-top-color: #6d5200;
+  border-top-color: #a07800;
 }
 
 .alert-bg-warn .alert-link {
-  border-top-color: #a07800;
-  color: #3a2c00;
+  color: #a07800;
 }
 
 .alert-bg-danger {
   color: #921925;
-  background-color: #eb8c95;
+  background-color: #f6cdd1;
   border-color: #921925;
 }
 
 .alert-bg-danger hr {
-  border-top-color: #66121a;
+  border-top-color: #921925;
 }
 
 .alert-bg-danger .alert-link {
-  border-top-color: #921925;
-  color: #3b0a0f;
+  color: #921925;
 }
 
 .alert-bg-dark {
   color: #060708;
-  background-color: #626d78;
+  background-color: #88939e;
   border-color: #060708;
 }
 
 .alert-bg-dark hr {
-  border-top-color: black;
+  border-top-color: #060708;
 }
 
 .alert-bg-dark .alert-link {
-  border-top-color: #060708;
-  color: black;
+  color: #060708;
 }
 
 .alert-bg-light {
@@ -2023,12 +2017,11 @@ a:not([href]):hover {
 }
 
 .alert-bg-light hr {
-  border-top-color: #9fadba;
+  border-top-color: #bdc6d0;
 }
 
 .alert-bg-light .alert-link {
-  border-top-color: #bdc6d0;
-  color: #8193a5;
+  color: #bdc6d0;
 }
 
 .alert-bg-white {
@@ -2038,17 +2031,16 @@ a:not([href]):hover {
 }
 
 .alert-bg-white hr {
-  border-top-color: #b3b3b3;
+  border-top-color: #cccccc;
 }
 
 .alert-bg-white .alert-link {
-  border-top-color: #cccccc;
-  color: #999999;
+  color: #cccccc;
 }
 
 .alert-bg-transparent {
   color: rgba(0, 0, 0, 0);
-  background-color: rgba(51, 51, 51, 0);
+  background-color: rgba(89, 89, 89, 0);
   border-color: rgba(0, 0, 0, 0);
 }
 
@@ -2057,7 +2049,6 @@ a:not([href]):hover {
 }
 
 .alert-bg-transparent .alert-link {
-  border-top-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 0);
 }
 
@@ -3979,6 +3970,22 @@ a.btn.disabled, fieldset:disabled, .btn:disabled {
     display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
+  }
+}
+
+.fade {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    -webkit-transition: none;
+    transition: none;
   }
 }
 
