@@ -49,5 +49,4 @@ To contribute to this project go ahead and checkout [contribute.md](/CONTRIBUTIN
 [![GitHub license](https://img.shields.io/github/license/SuNiL-Chau/Mine-CSS-Framework?color=orange&style=for-the-badge)](https://github.com/SuNiL-Chau/Mine-CSS-Framework/blob/master/LICENSE.md)
 
 ## Project Status
-*The project has slowed down for a while*
-__Note:__ *I'm Still working on it it might be unstable in one or the another way.*
+*The project is inprogress.... ;)*
