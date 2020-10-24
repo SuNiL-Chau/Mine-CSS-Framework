@@ -1915,7 +1915,7 @@ a:not([href]):hover {
 .alert-bg-primary {
   color: #b44102;
   background-color: #fee1d0;
-  border-color: #b44102;
+  border-color: #fec09e;
 }
 
 .alert-bg-primary hr {
@@ -1929,7 +1929,7 @@ a:not([href]):hover {
 .alert-bg-secondary {
   color: #3f3168;
   background-color: #d2cbe7;
-  border-color: #3f3168;
+  border-color: #b4a8d7;
 }
 
 .alert-bg-secondary hr {
@@ -1943,7 +1943,7 @@ a:not([href]):hover {
 .alert-bg-success {
   color: #146326;
   background-color: #a3edb4;
-  border-color: #146326;
+  border-color: #79e491;
 }
 
 .alert-bg-success hr {
@@ -1957,7 +1957,7 @@ a:not([href]):hover {
 .alert-bg-info {
   color: #137180;
   background-color: #b7ecf4;
-  border-color: #137180;
+  border-color: #8be0ee;
 }
 
 .alert-bg-info hr {
@@ -1971,7 +1971,7 @@ a:not([href]):hover {
 .alert-bg-warn {
   color: #a07800;
   background-color: #ffeeba;
-  border-color: #a07800;
+  border-color: #ffe187;
 }
 
 .alert-bg-warn hr {
@@ -1985,7 +1985,7 @@ a:not([href]):hover {
 .alert-bg-danger {
   color: #921925;
   background-color: #f6cdd1;
-  border-color: #921925;
+  border-color: #efa2a9;
 }
 
 .alert-bg-danger hr {
@@ -1999,7 +1999,7 @@ a:not([href]):hover {
 .alert-bg-dark {
   color: #060708;
   background-color: #88939e;
-  border-color: #060708;
+  border-color: #6d7a86;
 }
 
 .alert-bg-dark hr {
@@ -2013,7 +2013,7 @@ a:not([href]):hover {
 .alert-bg-light {
   color: #bdc6d0;
   background-color: white;
-  border-color: #bdc6d0;
+  border-color: white;
 }
 
 .alert-bg-light hr {
@@ -2027,7 +2027,7 @@ a:not([href]):hover {
 .alert-bg-white {
   color: #cccccc;
   background-color: white;
-  border-color: #cccccc;
+  border-color: white;
 }
 
 .alert-bg-white hr {
@@ -2041,7 +2041,7 @@ a:not([href]):hover {
 .alert-bg-transparent {
   color: rgba(0, 0, 0, 0);
   background-color: rgba(89, 89, 89, 0);
-  border-color: rgba(0, 0, 0, 0);
+  border-color: rgba(64, 64, 64, 0);
 }
 
 .alert-bg-transparent hr {

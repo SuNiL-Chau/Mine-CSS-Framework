@@ -5,7 +5,15 @@ export function Alert() {
     var alertCloseBtn = $(".alert-closeable button.close");
     // function
     alertCloseBtn.on("click", function() {
-        $(this).parent().removeClass("show"); 
-        $(this).parent().addClass("hide"); 
+        $(this).parent().removeClass("show");
+        if ($(this).parent().hasClass("fade")) {
+            $(this).parent().animate("fade").queue(
+                function () {
+                    $(this).addClass("hide");
+                }
+            );
+        } else {
+            $(this).parent().addClass("hide");
+        }
     });
 }
