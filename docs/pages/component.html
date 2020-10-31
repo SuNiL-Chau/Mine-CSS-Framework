@@ -39,7 +39,7 @@
     <div class="container-sm py-2">
         <h2 class="text-center">Alert</h2>
         <div class="container py-1">
-            <h3>Alert using <code>.alert</code> & bg colors using <code>.alert-bg-color</code></h3>
+            <h4>Alert using <code>.alert</code> & bg colors using <code>.alert-bg-color</code></h4>
             <div role="alert" class="alert alert-bg-primary">
                 Normal alert <a href="#" class="alert-link">primary</a>.
             </div>
@@ -65,6 +65,16 @@
                 Normal alert <a href="#" class="alert-link">light</a>.
             </div>
         </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="alertcode">
+                    &#60;div role="alert" class="alert alert-bg-primary"&#62; Normal alert &#60;a href="#" class="alert-link"&#62;primary&#60;/a&#62;. &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left copy-btn" data-clipboard-target=".alertcode">Copy Text</div>
+            </div>
+        </div>
 
         <div class="container-sm py-1">
             <h4>content-full alert with alerts own <code>.alert-head</code> and <code>hr</code></h4>
@@ -75,19 +85,40 @@
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perferendis voluptatem illo asperiores ratione est ullam soluta fugit nulla, cupiditate eos deserunt vitae magnam eius eveniet? Dolore exercitationem consequatur blanditiis.</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="alertcode-f">
+                    &#60;div class="alert alert-bg-success" role="alert"&#62; &#60;h4 class="alert-head"&#62;Wassup! @user&#60;/h4&#62; &#60;p&#62;Lorem ipsum dolor sit amet...&#60;/p&#62; &#60;hr&#62; &#60;p class="mb-0"&#62;Lorem ipsum dolor sit...&#60;/p&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left copy-btn" data-clipboard-target=".alertcode-f">Copy Text</div>
+            </div>
+        </div>
 
         <div class="container-sm py-1">
+            <h4>Dismissable alerts</h4>
             <div role="alert" class="alert alert-bg-warn alert-closeable fade show">
-                Alert with fade class.
+                Dismissable alert with fade class.
                 <button type="button" class="close" aria-label="close" data-dismiss="alert">
                     &times;
                 </button>
             </div>
             <div role="alert" class="alert alert-bg-success alert-closeable show">
-                Alert without fade class.
+                Dismissable alert without fade class.
                 <button type="button" class="close" aria-label="close" data-dismiss="alert">
                     &times;
                 </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <code class="alertcode-d">
+                    &#60;div role="alert" class="alert alert-bg-warn alert-closeable fade show"&#62; Dismissable alert with fade class. &#60;button type="button" class="close" aria-label="close" data-dismiss="alert"&#62; &#38;times; &#60;/button&#62; &#60;/div&#62;
+                </code>
+            </div>
+            <div class="col-xs-12 col-sm-2 col md-2 col-lg-2">
+                <div class="btn bg-primary-sliced-top-left copy-btn" data-clipboard-target=".alertcode-d">Copy Text</div>
             </div>
         </div>
 
@@ -260,12 +291,18 @@
 
     </div>
 
-            <!-- <div class="container-sm py-2">
-        <h3 class="text-center">Card</h3>
-
-    </div> -->
+<!-- card -->
 
     <script src="/dist/js/Mine.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script>
+        var btn = document.querySelectorAll('.copy-btn');
+        var clipboard = new ClipboardJS(btn);
+
+        clipboard.on('error', function (e) {
+            console.log(e);
+        });
+    </script>
 </body>
 
 </html>

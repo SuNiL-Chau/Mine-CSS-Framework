@@ -21,44 +21,49 @@ caption {
     & th, & td{
         padding: $pad-1;
         vertical-align: top;
-        border-top: $border-1 $bg-gray;
+        border-top: $border-1;
+        border-color: inherit;
     }
 
     & thead th{
         vertical-align: bottom;
-        border-bottom: $border-2 $bg-gray;
+        border-bottom: $border-2;
+        border-color: inherit;
     }
 
     & tbody{
-        border-top: $border-2 $bg-gray;
+        border-top: $border-2;
+        border-color: inherit;
         & + tbody {
-            border-top: $border-2 $bg-gray;
+            border-top: $border-2;
+            border-color: inherit;
         }
     }
 
 }
 
-.table-light{
-    background-color: $bg-light-less;
+@each $name, $color in $outline-colors {
+    .table-#{$name} {
+        color: #fff;
+        background-color: $color;
+    }
+}
+
+.table-light, .table-white, .table-transparent{
     color: $bg-dark;
 }
 
-.table-dark{
-    background-color: $bg-dark;
-    color: $bg-light;
-    border-color: $bg-gray;
+.table-warn {
+    color: $bg-dark;
 }
 
-.table-bordered{
-    th, td {
-        border: $border-1 $bg-gray;
-    }
+.table-bordered * {
+    border: $border-1;
+    border-color: inherit;
 }
 
-.table-borderless{
-    th, td, tbody, thead th {
-        border: 0;
-    }
+.table-borderless * {
+    border: 0;
 }
 
 .table-responsive{

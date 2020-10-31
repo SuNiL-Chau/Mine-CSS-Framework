@@ -30,6 +30,12 @@ a.btn.disabled, fieldset:disabled, .btn:disabled{
     pointer-events: none;
 }
 
+@each $names, $value in $outline-colors {
+    .btn-stack > .btn-#{$names}.active {
+        z-index: 0;
+    }
+}
+
 .btn-primary{
     @include primary-fill;
 }

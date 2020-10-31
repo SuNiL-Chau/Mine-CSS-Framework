@@ -24,7 +24,7 @@ $black01 : rgba(0, 0, 0, 0.125);
 $transparent : transparent;
 
 // button shadow
-$btn-shadow: 0 0 0 4px;
+$btn-shadow: 0 7px 20px 0;
 
 // border & alert padding
 $alert-pad: 0.75rem 1.25rem;
@@ -32,13 +32,13 @@ $alert-pad1: 1rem 1rem;
 
 // btn-focus color
 $bg-primary-focus: lighten($bg-primary, 20%);
-$bg-secondary-focus: lighten($bg-secondary, 30%);
-$bg-success-focus: lighten($bg-success, 30%);
-$bg-info-focus: lighten($bg-info, 30%);
-$bg-warn-focus: lighten($bg-warn, 30%);
-$bg-danger-focus: lighten($bg-danger, 30%);
-$bg-dark-focus: lighten($bg-dark, 30%);
-$bg-light-focus: lighten($bg-light, 30%);
+$bg-secondary-focus: lighten($bg-secondary, 20%);
+$bg-success-focus: lighten($bg-success, 20%);
+$bg-info-focus: lighten($bg-info, 20%);
+$bg-warn-focus: lighten($bg-warn, 20%);
+$bg-danger-focus: lighten($bg-danger, 20%);
+$bg-dark-focus: lighten($bg-dark, 20%);
+$bg-light-focus: lighten($bg-light, 20%);
 
 // z-index of all components
 $dropdown-zindex: 1000 !default;
