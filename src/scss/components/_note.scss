@@ -1,0 +1,22 @@
+.note {
+    background-color: $white;
+    padding: $p-1;
+    margin: $p-0-5;
+    border: $border-1 $white;
+    border-left-width: $p-0-5;
+    border-radius: $p-0-5;
+}
+
+@each $name,
+$color in $outline-colors {
+    .note-#{$name} {
+        border-left-color: $color;
+        background-color: lighten($color, 35%);
+        color: text-dynamic(lighten($color, 35%));
+    }
+}
+
+.note-light {
+    border-left-color: $bg-light-less;
+    color: text-dynamic($bg-light-less);
+}

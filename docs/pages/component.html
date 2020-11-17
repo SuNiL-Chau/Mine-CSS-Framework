@@ -34,12 +34,13 @@
         <h2 class="text-center">Components</h2>
     </div>
 
-    <!-- alerts -->
+    <!-- *alerts -->
 
     <div class="container-sm py-2">
         <h2 class="text-center">Alert</h2>
         <div class="container py-1">
             <h4>Alert using <code>.alert</code> & bg colors using <code>.alert-bg-color</code></h4>
+            <p>These are simple alerts which are created using the above classes.</p>
             <div role="alert" class="alert alert-bg-primary">
                 Normal alert <a href="#" class="alert-link">primary</a>.
             </div>
@@ -98,6 +99,8 @@
 
         <div class="container-sm py-1">
             <h4>Dismissable alerts</h4>
+            <p>These alerts are dismissable alerts with fade effect & without by just adding <code>fade</code> class.
+            </p>
             <div role="alert" class="alert alert-bg-warn alert-closeable fade show">
                 Dismissable alert with fade class.
                 <button type="button" class="close" aria-label="close" data-dismiss="alert">
@@ -121,12 +124,68 @@
                 <div class="btn bg-primary-sliced-top-left copy-btn" data-clipboard-target=".alertcode-d">Copy Text</div>
             </div>
         </div>
+        <div class="container py-1">
+            <p>Incase you want it to fadein on an event simply add class <code>hide</code> on the div and on any event
+                addclass <code>show</code>.</p>
+            <p>Check an example below</p>
+            <button class="btn btn-primary" onclick="mytrigger()">Trigger Alert</button>
+            <div role="alert" id="mineEG1" class="alert alert-bg-warn alert-closeable fade hide show">
+                Dismissable alert with fade class.
+                <button type="button" class="close" aria-label="close" data-dismiss="alert">
+                    &times;
+                </button>
+            </div>
+        </div>
 
-    </div>
+        </div>
+
+    <div class="container-sm py-2">
+        <h2 class="text-center">Notes</h2>
+        <div class="note note-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga delectus, quaerat quia consequuntur
+            beatae iste ea a sapiente minima id cum, at neque quisquam pariatur officiis voluptatibus nesciunt
+            voluptatum.
+        </div>
+        <div class="note note-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga delectus, quaerat quia consequuntur
+            beatae iste ea a sapiente minima id cum, at neque quisquam pariatur officiis voluptatibus nesciunt
+            voluptatum.
+        </div>
+        <div class="note note-success">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga delectus, quaerat quia consequuntur
+            beatae iste ea a sapiente minima id cum, at neque quisquam pariatur officiis voluptatibus nesciunt
+            voluptatum.
+        </div>
+        <div class="note note-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga delectus, quaerat quia consequuntur
+            beatae iste ea a sapiente minima id cum, at neque quisquam pariatur officiis voluptatibus nesciunt
+            voluptatum.
+        </div>
+        <div class="note note-warn">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga delectus, quaerat quia consequuntur
+            beatae iste ea a sapiente minima id cum, at neque quisquam pariatur officiis voluptatibus nesciunt
+            voluptatum.
+        </div>
+        <div class="note note-danger">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga delectus, quaerat quia consequuntur
+            beatae iste ea a sapiente minima id cum, at neque quisquam pariatur officiis voluptatibus nesciunt
+            voluptatum.
+        </div>
+        <div class="note note-dark">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga delectus, quaerat quia consequuntur
+            beatae iste ea a sapiente minima id cum, at neque quisquam pariatur officiis voluptatibus nesciunt
+            voluptatum.
+        </div>
+        <div class="note note-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga delectus, quaerat quia consequuntur
+            beatae iste ea a sapiente minima id cum, at neque quisquam pariatur officiis voluptatibus nesciunt
+            voluptatum.
+        </div>
+        </div>
 
     <div class="container-sm py-2">
         <h2 class="text-center">Button</h2>
-        <!-- normal btn -->
+        <!-- *normal btn -->
         <div class="container-sm py-1">
             <h3>To use the button add class <code>.btn</code> & other class like code <code>.btn-*</code> here star is the colors primary & etc.</h3>
             <button type="button" class="btn btn-primary">Primary</button>
@@ -302,6 +361,17 @@
         clipboard.on('error', function (e) {
             console.log(e);
         });
+    </script>
+    <script>
+        function mytrigger() {
+            var mineAlert = document.getElementById('mineEG1');
+            if (mineAlert.classList.contains('show' && 'hide')) {
+                mineAlert.classList.toggle('hide');
+            } else {
+                mineAlert.classList.add('show');
+                mineAlert.classList.toggle('hide');
+            }
+        }
     </script>
 </body>
 
