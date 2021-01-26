@@ -13,10 +13,12 @@ Search for the Different Css Framework & try to fenerate the idea & do Revamp ac
 
 ## Check here for more css link [here](https://github.com/troxler/awesome-css-frameworks)
 
-<!--
-Learn grid and create a framework,
-create framework which uses css grid not flexbox,
-provides utilities,
-provides gzip for better performance
-use pure js for different components
--->
+## Todo- after research:
+
+contributors feel free to add some of your point :)
+
+1. Learn grid and create a framework,
+1. create framework which uses css grid not flexbox,
+1. provides utilities,
+1. provides gzip for better performance
+1. use pure js for different components
