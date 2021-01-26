@@ -14,3 +14,5 @@ contributors feel free to add some of your point :)
 1. use pure js for different components
 
 Feel free to add something to the [G-Spreadsheet](https://docs.google.com/spreadsheets/d/1ZHewRLcwYmSfn4_S72EpClKVXg1HLVL4JQzbxUD5maU/edit?usp=sharing) in __library page__ Comment there & it will seen & done :)
+
+Feel free to hop on to my [discord server](https://discord.gg/fDmZcPc9va)
