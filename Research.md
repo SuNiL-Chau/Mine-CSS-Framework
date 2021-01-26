@@ -17,7 +17,6 @@ Search for the Different Css Framework & try to fenerate the idea & do Revamp ac
 
 contributors feel free to add some of your point :)
 
-1. Learn grid and create a framework,
 1. create framework which uses css grid not flexbox,
 1. provides utilities,
 1. provides gzip for better performance
