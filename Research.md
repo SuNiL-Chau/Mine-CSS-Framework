@@ -2,18 +2,17 @@
 
 Search for the Different Css Framework & try to fenerate the idea & do Revamp accordingly.
 
-## list: 
+## Awesome css frameworks for look ups [here](https://github.com/troxler/awesome-css-frameworks)
 
-1. [Atomic CSS / Atomizer](https://acss.io/)
-1. [Blueprint](http://www.blueprintcss.org/)
-1. [Bootstrap](https://getbootstrap.com/)
-1. [Bulma](https://bulma.io/)
-1. [Cascade Framework](http://jslegers.github.io/cascadeframework/)
-1. [Foundation](https://get.foundation/)
-1. [Simple CSS](siimple.xyz)
-1. [Undernet](https://www.undernet.io/)
-1. [YAML](http://www.yaml.de/)
-1. [Yogurt](https://yogurtcss.netlify.app/)
-1. [YUI CSS grids](https://clarle.github.io/yui3/)
+## Todo- after research:
 
-## Check here for more css link [here](https://github.com/troxler/awesome-css-frameworks)
+contributors feel free to add some of your point :)
+
+1. create framework which uses css grid not flexbox,
+1. provides utilities,
+1. provides gzip for better performance
+1. use pure js for different components
+
+Feel free to add something to the [G-Spreadsheet](https://docs.google.com/spreadsheets/d/1ZHewRLcwYmSfn4_S72EpClKVXg1HLVL4JQzbxUD5maU/edit?usp=sharing) in __library page__ Comment there & it will seen & done :)
+
+Feel free to hop on to my [discord server](https://discord.gg/fDmZcPc9va)
