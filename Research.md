@@ -1,10 +1,10 @@
-## Research of the Mine Css
+# Research of the Mine Css
 
 Search for the Different Css Framework & try to fenerate the idea & do Revamp accordingly.
 
 ## Awesome css frameworks for look ups [here](https://github.com/troxler/awesome-css-frameworks)
 
-## Todo- after research:
+## Todo- after research
 
 contributors feel free to add some of your point :)
 
