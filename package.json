@@ -1,7 +1,7 @@
 {
   "name": "mine-css-framework",
   "version": "1.0.0",
-  "description": "Hi, This is Sunil Chaudhary! This is my self project which I'm working on. This is a CSS Framework created with the inpiration from the Bootstrap V4.5 which is curently the latest one. So might find this CSS framework little similar to it. The naming convention are also kept as mine-*.  Feel free to check out bit by downloading it.",
+  "description": "Hi, This is Sunil Chaudhary! This is my self project which I'm working on. This is a CSS Framework created with the inpiration from lot of css frameworks. So might find this CSS framework little similar to others. The naming convention are also kept as mine-*.  Feel free to check out bit by downloading it.",
   "main": "/index.html",
   "scripts": {
     "dev": "webpack --mode development",
@@ -28,13 +28,13 @@
   },
   "homepage": "https://github.com/SuNiL-Chau/Mine-CSS-Framework#readme",
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "babel-loader": "^8.1.0",
-    "eslint": "^7.11.0",
-    "jquery": "^3.5.1",
-    "webpack": "^4.44.2",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.25.0",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  }
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {}
 }

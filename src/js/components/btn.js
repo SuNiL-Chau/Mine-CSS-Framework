@@ -1,11 +1,18 @@
 // btn
-export function Button() {
-    // variables
-    var btnToggle = $("[data-toggle=button]");
-    // function
-    btnToggle.on("click", function () {
-        $(this).attr("aria-pressed",$(this).attr("aria-pressed")==="true"?"false":"true");
-        $(this).toggleClass("active").toggleClass("focus");
-    });
 
+export function Button() {
+  // variables
+  var btnToggle = document.querySelectorAll("[data-toggle=button]");
+  // function
+  btnToggle.forEach((item) => {
+    item.addEventListener("click", function () {
+      if (this.getAttribute("aria-pressed") === "true") {
+        this.setAttribute("aria-pressed", "false");
+      } else {
+        this.setAttribute("aria-pressed", "true");
+      }
+      this.classList.toggle("active");
+      this.classList.toggle("focus");
+    });
+  });
 }
